@@ -40,20 +40,24 @@
 
 ## Table Of Content
 
-- **[Checklist - document the host information](#checklist-document-the-host-information)**
+- **[Hardening checklist](#hardening-checklist)**
 - **[Pre install tasks](#pre-install-tasks)**
   * [Physical system security](#physical-system-security)
+    + [Locked racks](#locked-racks)
     + [BIOS protection](#bios-protection)
-  * [Partitioning scheme](#partitioning-scheme)
   * [Hard disk encryption](#hard-disk-encryption)
-  * [Bootloader configuration](#bootloader-configuration)
+    + [/boot](#securing-boot)
+    + [SWAP](#swap)
+  * [Partitioning scheme](#partitioning-scheme)
 - **[Post install tasks](#post-install-tasks)**
+  * [Bootloader configuration](#bootloader-configuration)
   * [Disk partitions](#disk-partitions)
     + [Lock the boot directory](#lock-the-boot-directory)
     + [Secure /tmp and /var/tmp](#secure-tmp-and-var-tmp)
     + [Disk quotas](#disk-quotas)
   * [Keep system updated](#keep-system-updated)
   * [Package management](#package-management)
+    + [Automiatic security updates](#automatic-security-updates)
     + [Remove packages with known issues](#remove-packages-with-known-issues)
   * [Netfilter ruleset](#netfilter-ruleset)
   * [TCP wrapper](#tcp-wrapper)
@@ -72,9 +76,9 @@
   * [Limits](#limits)
   * [Shadow passwords](#shadow-passwords)
   * [Linux kernel hardening](#linux-kernel-hardening)
-  * [Kernel parameters](#kernel-parameters)
-    + [Improve network security](#improve-network-security)
-    + [Improve system security](#improve-system-security)
+    + [Kernel parameters](#kernel-parameters)
+      + [Network security](#improve-network-security)
+      + [System security](#improve-system-security)
   * [Remove unused modules](#remove-unused-modules)
   * [Secure shared memory](#secure-shared-memory)
   * [IRQ balance](#irq-balance)
@@ -98,7 +102,7 @@
   * [Testing tools](#testing-tools)
     + [Lynis](#lynis)
     + [Chrootkit](#chrootkit)
-- **[Hardening Services](#hardening-services)**
+- **[Services](#hardening-services)**
   * [Disable all unnecessary](#disable-all-unnecessary)
   * [System services](#system-services)
     + [OpenSSH](#openssh)

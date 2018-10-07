@@ -40,14 +40,14 @@
 
 ## Table Of Content
 
-- [Checklist - document the host information](#checklist-document-the-host-information)
-- [Pre install tasks](#pre-install-tasks)
+- **[Checklist - document the host information](#checklist-document-the-host-information)**
+- **[Pre install tasks](#pre-install-tasks)**
   * [Physical system security](#physical-system-security)
     + [BIOS protection](#bios-protection)
   * [Partitioning scheme](#partitioning-scheme)
   * [Hard disk encryption](#hard-disk-encryption)
   * [Bootloader configuration](#bootloader-configuration)
-- [Post install tasks](#post-install-tasks)
+- **[Post install tasks](#post-install-tasks)**
   * [Disk partitions](#disk-partitions)
     + [Lock the boot directory](#lock-the-boot-directory)
     + [Secure /tmp and /var/tmp](#secure-tmp-and-var-tmp)
@@ -83,7 +83,7 @@
   * [Backups](#backups)
   * [External devices](#external-devices)
     + [Disable USB usage](disable-usb-usage)
-- [Tools](#tools)
+- **[Tools](#tools)**
   * [Logging and Auditing](#logging-and-auditing)
     + [Auditd](#auditd)
     + [Tiger](#tiger)
@@ -98,7 +98,7 @@
   * [Testing tools](#testing-tools)
     + [Lynis](#lynis)
     + [Chrootkit](#chrootkit)
-- [Hardening Services](#hardening-services)
+- **[Hardening Services](#hardening-services)**
   * [Disable all unnecessary](#disable-all-unnecessary)
   * [System services](#system-services)
     + [OpenSSH](#openssh)
@@ -127,6 +127,6 @@
     + [Redis](#redis)
   * [Queues](#queues)
     + [AMQP](#amqp)
-- [Deployment](#deployment)
-- [Testing configuration](#testing-configuration)
-- [External resources](#external-resources)
+- **[Deployment](#deployment)**
+- **[Testing configuration](#testing-configuration)**
+- **[External resources](#external-resources)**

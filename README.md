@@ -433,7 +433,7 @@ Make sure the following filesystems are mounted on separate partitions:
 - `/boot`
 - `/tmp`
 - `/var`
-- `/var/tmp`
+- `/var/tmp` (or symlink for `/tmp`)
 - `/var/log`
 
 Additionally, depending on the purpose of the server, you should consider separating the following partitions:
@@ -454,7 +454,7 @@ LABEL=/boot   /boot   ext2  defaults,ro   1 2
 
 #### :eight_pointed_black_star: Secure /tmp, /var/tmp and /dev/shm
 
-Temporary storage directories such as `/tmp`, `/var/tmp` and `/dev/shm` gives the ability to attacker to provide storage space for malicious executables.
+
 
 #### :eight_pointed_black_star: Swap partition
 

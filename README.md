@@ -72,8 +72,10 @@
     + [Separate disk partitions](#eight_pointed_black_star-separate-disk-partitions)
     + [Mount options: nodev, noexec and nosuid](#eight_pointed_black_star-mount-options-nodev-noexec-and-nosuid)
     + [Secure /boot directory](#eight_pointed_black_star-secure-boot-directory)
-    + [Secure /tmp and /var/tmp](#eight_pointed_black_star-secure-tmp-var-tmp)
-    + [Secure /dev/shm](#eight_pointed_black_star-secure-dev-shm)
+    + [Secure /tmp and /var/tmp](#eight_pointed_black_star-secure-tmp-and-vartmp)
+    + [Secure /dev/shm](#eight_pointed_black_star-secure-devshm)
+    + [Secure /proc filesystem](#eight_pointed_black_star-secure-proc-filesystem)
+    + [Swap partition](#eight_pointed_black_star-swap-partition-1)
     + [Disk quotas](#eight_pointed_black_star-disk-quotas)
     + [Summary checklist](#ballot_box_with_check-summary-checklist-3)
   * **[Keep system updated](#keep-system-updated)**
@@ -486,7 +488,7 @@ As a rule of thumb, malicious applications usually write to **/tmp** and then at
 
 This will deny binary execution from **/tmp**, disable any binary to be suid root, and disable any block devices from being created.
 
-**The first possible options is create symlink**
+**The first possible scenario is create symlink**
 
 ```bash
 mv /var/tmp /var/tmp.old
@@ -500,7 +502,7 @@ and set properly mount params:
 UUID=<...>  /tmp  ext4  defaults,nodev,nosuid,noexec  1 2
 ```
 
-**The second solution is a bind mount**
+**The second scenario is a bind mount**
 
 The storage location **/var/tmp** should be bind mounted to **/tmp**, as having multiple locations for temporary storage is not required:
 
@@ -508,7 +510,7 @@ The storage location **/var/tmp** should be bind mounted to **/tmp**, as having 
 /tmp  /var/tmp  none  rw,nodev,nosuid,noexec,bind  0 0
 ```
 
-**The third solution is setting up polyinstantiated directories**
+**The third scenario is setting up polyinstantiated directories**
 
 Create new directories:
 
@@ -524,7 +526,7 @@ Edit `/etc/security/namespace.conf`:
  /var/tmp  /var/tmp/tmp-inst/  level  root,adm
 ```
 
-Set correct SELinux context:
+Set correct **SELinux** context:
 
 ```bash
 setsebool polyinstantiation_enabled=1
@@ -537,6 +539,24 @@ And set `nodev`, `nosuid` and `noexec` mount options in `/etc/fstab`.
   > Alternative for **polyinstantiated directories** is **PrivateTmp** feature available from **systemd**. For more information please see: [New Red Hat Enterprise Linux 7 Security Feature: PrivateTmp](https://access.redhat.com/blogs/766093/posts/1976243).
 
 #### :eight_pointed_black_star: Secure /dev/shm
+
+`/dev/shm` is a temporary file storage filesystem, i.e. **tmpfs**, that uses RAM for the backing store. One of the major security issue with the `/dev/shm` is anyone can upload and execute files inside the `/dev/shm` similar to the `/tmp` partition.
+
+For applies to shared memory `/dev/shm` mount params:
+
+```bash
+tmpfs  /dev/shm  tmpfs  rw,nodev,nosuid,noexec 0 0
+```
+
+#### :eight_pointed_black_star: Secure /proc filesystem
+
+The proc pseudo-filesystem `/proc` should be mounted with hidepid. When setting `hidepid` to **2**, directories entries in `/proc` will hidden.
+
+```bash
+proc  /proc  proc  defaults,hidepid=2  0 0
+```
+
+  > Some of the services/programs operate incorrectly when the `hidepid` parameter is set, e.g. Nagios checks.
 
 #### :eight_pointed_black_star: Swap partition
 
@@ -553,3 +573,9 @@ And set `nodev`, `nosuid` and `noexec` mount options in `/etc/fstab`.
 | Separate `/var/tmp` partition | :black_square_button: | :black_square_button: |
 | Separate `/var/audit` partition | :black_square_button: | :black_square_button: |
 | Secure `/boot` directory with `ro`, `nodev`, `nosuid`, `noexec` options | :black_square_button: | :black_square_button: |
+| Secure `/tmp` and `/var/tmp` directory with `nodev`, `nosuid`, `noexec` options | :black_square_button: | :black_square_button: |
+| Create symlink for `/var/tmp` in `/tmp` | :black_square_button: | :black_square_button: |
+| Setting up bind-mount `/var/tmp` to `/tmp` | :black_square_button: | :black_square_button: |
+| Setting up polyinstantiated directories for `/tmp` and `/var/tmp` | :black_square_button: | :black_square_button: |
+| Secure `/dev/shm` directory with `nodev`, `nosuid`, `noexec` options | :black_square_button: | :black_square_button: |
+| Secure `/proc` filesystem with `hidepid=2` option | :black_square_button: | :black_square_button: |

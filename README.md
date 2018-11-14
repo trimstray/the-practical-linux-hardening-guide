@@ -493,7 +493,7 @@ This will deny binary execution from **/tmp**, disable any binary to be suid roo
 ```bash
 mv /var/tmp /var/tmp.old
 ln -s /tmp /var/tmp
-cp -prf /var/tmp.old /tmp && rm -fr /var/tmp.old
+cp -prf /var/tmp.old/* /tmp && rm -fr /var/tmp.old
 ```
 
 and set properly mount params:
@@ -550,7 +550,7 @@ tmpfs  /dev/shm  tmpfs  rw,nodev,nosuid,noexec 0 0
 
 #### :eight_pointed_black_star: Secure /proc filesystem
 
-The proc pseudo-filesystem `/proc` should be mounted with hidepid. When setting `hidepid` to **2**, directories entries in `/proc` will hidden.
+The proc pseudo-filesystem `/proc` should be mounted with `hidepid`. When setting `hidepid` to **2**, directories entries in `/proc` will hidden.
 
 ```bash
 proc  /proc  proc  defaults,hidepid=2  0 0

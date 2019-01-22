@@ -551,7 +551,7 @@ tmpfs  /dev/shm  tmpfs  rw,nodev,nosuid,noexec,size=1024M,mode=1777 0 0
   > You can also create a group named 'shm' and put application users for SHM-using applications in there. Then the access can be completely be restricted as such:
   
 ```bash
-tmpfs  /dev/shm  tmpfs  rw,nodev,nosuid,noexec,mode=1770,size=1024M 0 0
+tmpfs  /dev/shm  tmpfs  rw,nodev,nosuid,noexec,size=1024M,mode=1770,uid=root,gid=shm 0 0
 ```
 
 #### :eight_pointed_black_star: Secure /proc filesystem

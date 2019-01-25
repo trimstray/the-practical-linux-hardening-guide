@@ -38,7 +38,9 @@
 
 <br>
 
-:collision: Work in progress, just a moment... First, I update a [Table Of Content](#table-of-content).
+:collision: Work in progress, just a moment... First, I update a [Table Of Content](#table-of-content) and chapters.
+
+If you want to support another repository containing **hardening** rules, please see: [linux-hardening-checklist](https://github.com/trimstray/linux-hardening-checklist) - it's a simple checklist with the most important hardening rules.
 
 ****
 
@@ -363,32 +365,6 @@ Basically when you want to prohibit unauthorized reconfiguring of your system, o
 
 You can set password for the bootloader for prevents users from entering single user mode, changing settings at boot time, access to the bootloader console, reset the root password, if there is no password for GRUB-menu or access to non-secure operating systems.
 
-#### :eight_pointed_black_star: Protect bootloader config files
-
-Set the owner and group of `/etc/grub.conf` to the root user:
-
-```bash
-chown root:root /etc/grub.conf
-```
-
-or
-
-```bash
-chown -R root:root /etc/grub.d
-```
-
-Set permission on the `/etc/grub.conf` or `/etc/grub.d` file to read and write for root only:
-
-```bash
-chmod og-rwx /etc/grub.conf
-```
-
-or
-
-```bash
-chmod -R og-rwx /etc/grub.d
-```
-
 ###### Generate password hash
 
 ```bash
@@ -417,6 +393,32 @@ grub-mkconfig > /boot/grub/grub.cfg
 
 # RedHat like distributions
 grub2-mkconfig > /boot/grub2/grub.cfg
+```
+
+#### :eight_pointed_black_star: Protect bootloader config files
+
+Set the owner and group of `/etc/grub.conf` to the root user:
+
+```bash
+chown root:root /etc/grub.conf
+```
+
+or
+
+```bash
+chown -R root:root /etc/grub.d
+```
+
+Set permission on the `/etc/grub.conf` or `/etc/grub.d` file to read and write for root only:
+
+```bash
+chmod og-rwx /etc/grub.conf
+```
+
+or
+
+```bash
+chmod -R og-rwx /etc/grub.d
 ```
 
 #### :ballot_box_with_check: Summary checklist
@@ -549,7 +551,7 @@ tmpfs  /dev/shm  tmpfs  rw,nodev,nosuid,noexec,size=1024M,mode=1777 0 0
 ```
 
   > You can also create a group named 'shm' and put application users for SHM-using applications in there. Then the access can be completely be restricted as such:
-  
+
 ```bash
 tmpfs  /dev/shm  tmpfs  rw,nodev,nosuid,noexec,size=1024M,mode=1770,uid=root,gid=shm 0 0
 ```

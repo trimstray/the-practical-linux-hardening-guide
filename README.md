@@ -40,7 +40,7 @@
 
 :collision: Work in progress, just a moment... First, I update a [Table Of Content](#table-of-content) and chapters.
 
-If you want to support another repository containing **hardening** rules, please see: [linux-hardening-checklist](https://github.com/trimstray/linux-hardening-checklist) - it's a simple checklist with the most important hardening rules.
+If you want to support another repository containing **hardening** recipes, please see: [linux-hardening-checklist](https://github.com/trimstray/linux-hardening-checklist) - it's a simple checklist with the most important hardening rules.
 
 ****
 

@@ -129,8 +129,10 @@ If you want to support another repository containing **hardening** recipes, plea
   * [Testing tools](#testing-tools)
     + [Lynis](#lynis)
     + [Chrootkit](#chrootkit)
-- **[Services](#hardening-services)**
-  * [Disable all unnecessary](#disable-all-unnecessary)
+- **[Services](#services)**
+  * [Disable all unnecessary services](#disable-all-unnecessary-services)
+    + [Common unix print system](#eight_pointed_black_star-common-unix-print-system)
+    +  [Summary Checklits](#ballot_box_with_check-summary-checklist-4)
   * [System services](#system-services)
     + [OpenSSH](#openssh)
     + [NTP](#ntp)
@@ -603,3 +605,28 @@ proc  /proc  proc  defaults,hidepid=2  0 0
 | Setting up polyinstantiated directories for `/tmp` and `/var/tmp` | :black_square_button: | :black_square_button: |
 | Secure `/dev/shm` directory with `nodev`, `nosuid`, `noexec` options | :black_square_button: | :black_square_button: |
 | Secure `/proc` filesystem with `hidepid=2` option | :black_square_button: | :black_square_button: |
+
+## Services
+
+### Disable all unnecessary services
+
+The action in this section provide guidance on some of unwanted applications and services which you might not needed but they are installed by default during OS installation and unknowingly start eating your system resources and also threats to the system security. If unused services is not enabled then it cannot be exploited.
+
+#### :eight_pointed_black_star: Common Unix Print System
+
+The Common Unix Print System (CUPS) provides the ability to print to both local and network printers. If the system does not need to accept print jobs from other systems, it's recommended that CUPS be disabled to reduce the potential attack.
+
+Run the following command to verify cups is not enabled:
+
+```bash
+# systemctl is-enabled cups
+disabled
+```
+
+Run the following command to disable cups:
+
+```bash
+# systemctl disable cups
+```
+
+[Source](http://www.cups.org)

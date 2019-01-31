@@ -144,7 +144,7 @@ If you want to support another repository containing **hardening** recipes, plea
     + [Bind9](#bind9)
   * [Mail services](#mail-services)
     + [Postfix](#postfix)
-- **[Web services](#web-services)**
+  * [Web services](#web-services)
     + [Nginx](#nginx)
       - [Files and directories permissions](#files-and-directories-permissions)
       - [Use HTTPS](#use-https)
@@ -155,7 +155,7 @@ If you want to support another repository containing **hardening** recipes, plea
       - [Enable HTTP Strict Transport Security](#enable-http-strict-transport-security)
       - [Security related headers](#security-related-headers)
     + [Apache](#apache)
-- **[Databases](#databases)**
+  * [Databases](#databases)
     + [PostgreSQL](#postgresql)
     + [MySQL](#mysql)
     + [Redis](#redis)

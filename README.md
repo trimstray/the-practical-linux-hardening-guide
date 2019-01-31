@@ -155,7 +155,7 @@ If you want to support another repository containing **hardening** recipes, plea
       - [Enable HTTP Strict Transport Security](#enable-http-strict-transport-security)
       - [Security related headers](#security-related-headers)
     + [Apache](#apache)
-  * [Databases](#databases)
+- **[Databases](#databases)**
     + [PostgreSQL](#postgresql)
     + [MySQL](#mysql)
     + [Redis](#redis)

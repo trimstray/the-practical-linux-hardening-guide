@@ -636,7 +636,7 @@ Run the following command to disable cups:
 
 ### Nginx 
 Nginx is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server, originally written by [Igor Sysoev](http://sysoev.ru/en/).
-It's used worldwide, and is one best tools at what it does. Default configuration that comes with it, however, is not very security oriented, and it requires some work to set it up properly. That's what this section aims to help you with. 
+It's used worldwide, and is one of best tools at what it does. Default configuration that comes with it, however, is not very security oriented, and it requires some work to set it up properly. That's what this section aims to help you with. 
 
 [Source](https://nginx.org/en/)
 #### :eight_pointed_black_star: Files and directories permissions

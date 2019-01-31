@@ -632,14 +632,14 @@ Run the following command to disable cups:
 
 [Source](http://www.cups.org)
 
-## Web services
+### Web services
 
 ### Nginx 
 Nginx is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server, originally written by [Igor Sysoev](http://sysoev.ru/en/).
 It's used worldwide, and is one best tools at what it does. Default configuration that comes with it, however, is not very security oriented, and it requires some work to set it up properly. That's what this section aims to help you with. 
 
 [Source](https://nginx.org/en/)
-#### Files and directories permissions
+#### :eight_pointed_black_star: Files and directories permissions
 
 Usually setting directories permissions to `0755` and file permissions to `0644` is a good practise.
 `0755` permissions for directories allows nginx user to access files in the folder, however you don't want to grant same type of permissions to a file, as granting execution permissions to a file is not a good idea, especially on a publicly exposed server.
@@ -655,7 +655,7 @@ Script for setting all files permissions to `0644`:
 Whatever you do, never grant `0777` permissions to files, nor folders. 
 
 
-##### Use HTTPS
+#### :eight_pointed_black_star: Use HTTPS
 In this day and age, with services like [Let's Encrypt](https://letsencrypt.org/), there's no excuse not to use HTTPS for your website. 
 
 This example configuration also includes stronger cihper suite, ssl session adjustments, HSTS header, stronger DHE parameter, and OSCP Stapling.
@@ -694,7 +694,8 @@ server {
 ```
 
 [Source](https://mozilla.github.io/server-side-tls/ssl-config-generator/)
-#### Enable HTTP/2
+
+#### :eight_pointed_black_star: Enable HTTP/2
 HTTP/2 is a replacement for how HTTP is expressed “on the wire.” It is not a ground-up rewrite of the protocol; HTTP methods, status codes and semantics are the same, and it should be possible to use the same APIs as HTTP/1.x (possibly with some small additions) to represent the protocol.
 
 [Source](https://http2.github.io/)
@@ -738,7 +739,7 @@ server {
 }
 ```
 
-#### Separate domains
+#### :eight_pointed_black_star: Separate domains
 
 In case you have more than one website you'd like to serve from your server, nginx allows you to that.
 
@@ -777,7 +778,7 @@ server {
 }
 ```
 
-#### Redirect all unencrypted traffic to HTTPS
+#### :eight_pointed_black_star: Redirect all unencrypted traffic to HTTPS
 
 This config entry is responsible for permanently redirecting all HTTP traffic to HTTPS. It will redirect all visitors that try to access website through HTTP on port 80, to HTTPS on port 443:
 `return 301 https://$host$request_uri;` 
@@ -807,7 +808,7 @@ server {
 }
 ```
 
-#### Enable HTTP Strict Transport Security
+#### :eight_pointed_black_star: Enable HTTP Strict Transport Security
 
 **What is HSTS?**
 
@@ -846,7 +847,7 @@ server {
         add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
 }
 ```
-#### Diffie Hellman Ephemeral Parameter
+#### :eight_pointed_black_star: Diffie Hellman Ephemeral Parameter
 All versions of nginx as of 1.4.4 rely on OpenSSL for input parameters to Diffie-Hellman (DH). Unfortunately, this means that Ephemeral Diffie-Hellman (DHE) will use OpenSSL's defaults, which include a 1024-bit key for the key-exchange. 
 This example aims to generate stronger DHE parameter:
 ```
@@ -859,7 +860,7 @@ ssl_dhparam /etc/nginx/ssl/dhparam.pem;
 ```
 [Source](https://raymii.org/s/tutorials/Strong_SSL_Security_On_nginx.html)
 
-#### Security related headers
+#### :eight_pointed_black_star: Security related headers
 
 <u>Cross-site scripting (XSS) protection</u>:
 Helps with preventing XSS attacks, it's enabling cross-site scripting filter built into modern browsers.

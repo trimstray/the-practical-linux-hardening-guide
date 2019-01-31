@@ -782,6 +782,7 @@ server {
 #### :eight_pointed_black_star: Redirect all unencrypted traffic to HTTPS
 
 This config entry is responsible for permanently redirecting all HTTP traffic to HTTPS. It will redirect all visitors that try to access website through HTTP on port 80, to HTTPS on port 443:
+
 `return 301 https://$host$request_uri;` 
 
 **Example config:**
@@ -820,6 +821,7 @@ When a user enters a web domain manually (providing the domain name without the 
 [Source](https://www.nginx.com/blog/http-strict-transport-security-hsts-and-nginx/)
 
 Config entry :
+
 `add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;`
 
 **Example config**
@@ -864,20 +866,34 @@ ssl_dhparam /etc/nginx/ssl/dhparam.pem;
 #### :eight_pointed_black_star: Security related headers
 
 _Cross-site scripting (XSS) protection:_
+
 Helps with preventing XSS attacks, it's enabling cross-site scripting filter built into modern browsers.
+
 `add_header x-xss-protection "1; mode=block" always;`
 
+
 _X-Frame-Options:_
+
 Prevents iframe loading from different websites:
+
 `add_header x-frame-options "SAMEORIGIN" always;`
 
+
 _X-Content-Type-Options:_
+
 It helps reducing drive-by downloads:
+
 `add_header X-Content-Type-Options "nosniff" always;`
 
+
 _HTTP Strict Transport Security (HSTS):_
+
 When a browser sees this header from an HTTPS website, it “learns” that this domain must only be accessed using HTTPS (SSL or TLS). It caches this information for the max-age period (typically 31,536,000 seconds, equal to about 1 year).
+
 `add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;`
 
+
+
 [Source 1](https://www.nginx.com/blog/http-strict-transport-security-hsts-and-nginx/)
+
 [Source 2](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project)

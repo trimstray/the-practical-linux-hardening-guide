@@ -659,7 +659,8 @@ Whatever you do, never grant `0777` permissions to files, nor folders.
 In this day and age, with services like [Let's Encrypt](https://letsencrypt.org/), there's no excuse not to use HTTPS for your website. 
 
 This example configuration also includes stronger cihper suite, ssl session adjustments, HSTS header, stronger DHE parameter, and OSCP Stapling.
-**Example of a decent HTTPS config with HTTP to HTTPS redirection:**
+
+**Example of a config with HTTP to HTTPS redirection:**
 
 ```
 server {

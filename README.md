@@ -863,20 +863,19 @@ ssl_dhparam /etc/nginx/ssl/dhparam.pem;
 
 #### :eight_pointed_black_star: Security related headers
 
-<u>Cross-site scripting (XSS) protection</u>:
+_Cross-site scripting (XSS) protection:_
 Helps with preventing XSS attacks, it's enabling cross-site scripting filter built into modern browsers.
 `add_header x-xss-protection "1; mode=block" always;`
 
-<u>X-Frame-Options:</u>
+_X-Frame-Options:_
 Prevents iframe loading from different websites:
 `add_header x-frame-options "SAMEORIGIN" always;`
 
-<u>X-Content-Type-Options</u>:
+_X-Content-Type-Options:_
 It helps reducing drive-by downloads:
 `add_header X-Content-Type-Options "nosniff" always;`
 
-
-<u>HTTP Strict Transport Security (HSTS):</u>
+_HTTP Strict Transport Security (HSTS):_
 When a browser sees this header from an HTTPS website, it “learns” that this domain must only be accessed using HTTPS (SSL or TLS). It caches this information for the max-age period (typically 31,536,000 seconds, equal to about 1 year).
 `add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;`
 

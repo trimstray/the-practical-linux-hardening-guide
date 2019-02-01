@@ -634,11 +634,13 @@ Run the following command to disable cups:
 
 ### Web services
 
-### Nginx 
+### Nginx
+
 Nginx is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server, originally written by [Igor Sysoev](http://sysoev.ru/en/).
 It's used worldwide, and is one of best tools at what it does. Default configuration that comes with it, however, is not very security oriented, and it requires some work to set it up properly. That's what this section aims to help you with. 
 
 [Source](https://nginx.org/en/)
+
 #### :eight_pointed_black_star: Files and directories permissions
 
 Usually setting directories permissions to `0755` and file permissions to `0644` is a good practise.
@@ -646,16 +648,20 @@ Usually setting directories permissions to `0755` and file permissions to `0644`
 
 Script for setting all directories permissions to `0755` (here we assume that webserver directory path is `/var/www/html`):
 
-```find /var/www/html -type d -exec chmod 755 {} \;```
+```bash
+find /var/www/html -type d -exec chmod 755 {} \;
+```
 
 Script for setting all files permissions to `0644`:
 
-```find /var/www/html -type f -exec chmod 644 {} \;```
+```bash
+find /var/www/html -type f -exec chmod 644 {} \;
+```
 
 Whatever you do, never grant `0777` permissions to files, nor folders. 
 
-
 #### :eight_pointed_black_star: Use HTTPS
+
 In this day and age, with services like [Let's Encrypt](https://letsencrypt.org/), there's no excuse not to use HTTPS for your website. 
 
 This example configuration also includes stronger cihper suite, ssl session adjustments, HSTS header, stronger DHE parameter, and OSCP Stapling.
@@ -690,13 +696,14 @@ server {
         ssl_prefer_server_ciphers on;
         ssl_stapling on;
         ssl_stapling_verify on;
-        ssl_dhparam /etc/nginx/ssl/dhparam.pem;
+        ssl_dhparam /etc/nginx/ssl/dhparam-4096.pem;
 }
 ```
 
 [Source](https://mozilla.github.io/server-side-tls/ssl-config-generator/)
 
 #### :eight_pointed_black_star: Enable HTTP/2
+
 HTTP/2 is a replacement for how HTTP is expressed “on the wire.” It is not a ground-up rewrite of the protocol; HTTP methods, status codes and semantics are the same, and it should be possible to use the same APIs as HTTP/1.x (possibly with some small additions) to represent the protocol.
 
 [Source](https://http2.github.io/)
@@ -822,11 +829,13 @@ When a user enters a web domain manually (providing the domain name without the 
 
 Config entry :
 
-`add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;`
+```bash
+add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+```
 
 **Example config**
 
-```
+```bash
 server {
         listen 80 default_server;
         listen [::]:80 default_server;
@@ -850,16 +859,21 @@ server {
         add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
 }
 ```
+
 #### :eight_pointed_black_star: Diffie Hellman Ephemeral Parameter
+
 All versions of nginx as of 1.4.4 rely on OpenSSL for input parameters to Diffie-Hellman (DH). Unfortunately, this means that Ephemeral Diffie-Hellman (DHE) will use OpenSSL's defaults, which include a 1024-bit key for the key-exchange. 
 This example aims to generate stronger DHE parameter:
-```
+
+```bash
 cd /etc/nginx/ssl/
-openssl dhparam -out dhparam.pem 4096
+openssl dhparam -out dhparam-4096.pem 4096
 ```
+
 Then add it to your nginx config with this config entry:
-```
-ssl_dhparam /etc/nginx/ssl/dhparam.pem;
+
+```bash
+ssl_dhparam /etc/nginx/ssl/dhparam-4096.pem;
 ```
 [Source](https://raymii.org/s/tutorials/Strong_SSL_Security_On_nginx.html)
 
@@ -869,31 +883,33 @@ _Cross-site scripting (XSS) protection:_
 
 Helps with preventing XSS attacks, it's enabling cross-site scripting filter built into modern browsers.
 
-`add_header x-xss-protection "1; mode=block" always;`
-
+```bash
+add_header x-xss-protection "1; mode=block" always;
+```
 
 _X-Frame-Options:_
 
 Prevents iframe loading from different websites:
 
-`add_header x-frame-options "SAMEORIGIN" always;`
-
+```bash
+add_header x-frame-options "SAMEORIGIN" always;
+```
 
 _X-Content-Type-Options:_
 
 It helps reducing drive-by downloads:
 
-`add_header X-Content-Type-Options "nosniff" always;`
-
+```bash
+add_header X-Content-Type-Options "nosniff" always;
+```
 
 _HTTP Strict Transport Security (HSTS):_
 
 When a browser sees this header from an HTTPS website, it “learns” that this domain must only be accessed using HTTPS (SSL or TLS). It caches this information for the max-age period (typically 31,536,000 seconds, equal to about 1 year).
 
-`add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;`
-
-
+```bash
+add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+```
 
 [Source 1](https://www.nginx.com/blog/http-strict-transport-security-hsts-and-nginx/)
-
 [Source 2](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project)

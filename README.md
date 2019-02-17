@@ -46,6 +46,7 @@ If you want to support another repository containing **hardening** recipes, plea
 
 ## Table Of Contents
 
+- **[Contributing](#contributing)**
 - **[Pre install tasks](#pre-install-tasks)**
   * **[Hard disk encryption](#hard-disk-encryption)**
     + [Introduction](#information_source-introduction-1)
@@ -154,6 +155,12 @@ If you want to support another repository containing **hardening** recipes, plea
 - **[Deployment](#deployment)**
 - **[Testing configuration](#testing-configuration)**
 - **[External resources](#external-resources)**
+
+## Contributing
+
+If you find something which doesn't make sense, or one of these doesn't seem right, or something seems really stupid; please make a pull request or please add valid and well-reasoned opinions about your changes or comments.
+
+See **[this](CONTRIBUTING.md)**.
 
 ## Pre install tasks
 

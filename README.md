@@ -160,7 +160,7 @@ If you want to support another repository containing **hardening** recipes, plea
 
 If you find something which doesn't make sense, or one of these doesn't seem right, or something seems really stupid; please make a pull request or please add valid and well-reasoned opinions about your changes or comments.
 
-See **[this](CONTRIBUTING.md)**.
+Before add pull request please see **[this](CONTRIBUTING.md)**.
 
 ## Pre install tasks
 

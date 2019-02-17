@@ -44,7 +44,7 @@ If you want to support another repository containing **hardening** recipes, plea
 
 ****
 
-## Table Of Content
+## Table Of Contents
 
 - **[Pre install tasks](#pre-install-tasks)**
   * **[Hard disk encryption](#hard-disk-encryption)**

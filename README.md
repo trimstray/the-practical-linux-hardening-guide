@@ -47,16 +47,6 @@ If you want to support another repository containing **hardening** recipes, plea
 ## Table Of Content
 
 - **[Pre install tasks](#pre-install-tasks)**
-  * **[Physical system security](#physical-system-security)**
-    + [Introduction](#information_source-introduction)
-    + [Secure rooms](#eight_pointed_black_star-secure-rooms)
-    + [Monitoring](#eight_pointed_black_star-monitoring)
-    + [Air conditioning](#eight_pointed_black_star-air-conditioning)
-    + [Fire protection](#eight_pointed_black_star-fire-protection)
-    + [Locked racks](#eight_pointed_black_star-locked-racks)
-    + [Console security](#eight_pointed_black_star-console-security)
-    + [BIOS protection](#eight_pointed_black_star-bios-protection)
-    + [Summary checklist](#ballot_box_with_check-summary-checklist)
   * **[Hard disk encryption](#hard-disk-encryption)**
     + [Introduction](#information_source-introduction-1)
     + [Encrypt root filesystem](#eight_pointed_black_star-encrypt-root-filesystem)
@@ -167,93 +157,6 @@ If you want to support another repository containing **hardening** recipes, plea
 
 ## Pre install tasks
 
-### Physical system security
-
-#### :information_source: Introduction
-
-The primary goal of physical security is to stop physical attacks whenever possible, and, failing that, to slow them down so that hopefully someone will notice the presence of the attacker in a restricted area, preventing any tampering with the system. [Weak physical security often invalidates any other security measure](https://www.lynda.com/Linux-tutorials/Physical-security-concepts/728406/750240-4.html), and thus should be prioritized. 
-
-#### :eight_pointed_black_star: Secure rooms
-
-For secure rooms make sure that the walls go beyond the false ceiling, and below the raised floor ([source](https://books.google.pt/books?id=XD68NYRPD9oC&pg=PA158&lpg=PA158&dq=physical+security+computer+systems+false+ceiling&source=bl&ots=1wzz6IsBfw&sig=ACfU3U0IPb8NrSiQaQoZFfnu4eMbRgYngQ&hl=en&sa=X&redir_esc=y#v=onepage&q=physical%20security%20computer%20systems%20false%20ceiling&f=false)), large vents should also be [covered with bars](https://books.google.pt/books?id=6yTGIaHLNsAC&pg=PA160&lpg=PA160&dq=covering+vents+with+bars+physical+security&source=bl&ots=2k-196Kwwk&sig=ACfU3U0KsfGhDk06A6qUHIXt88xEi8FZ6w&hl=en&sa=X&redir_esc=y#v=onepage&q=covering%20vents%20with%20bars%20physical%20security&f=false) if possible.
-
-#### :eight_pointed_black_star: Monitoring
-
-Monitoring the room with CCTV or wired cameras is a great way to provide security for your server room or data center. As well as providing video footage of events which may occur - door open events, motion detection or any other sensor event, they also act as a visual deterrent to would be criminals.
-
-Solution for remotely monitoring the temperature ensue proactively notify you when the temperature goes above or below pre-defined thresholds, potentially allowing you to take corrective measures before encountering costly downtime.
-
-[Source](https://www.enviromon.net/monitoring-physical-security-server-room/)
-
-#### :eight_pointed_black_star: Air conditioning
-
-Computer equipment generates heat, and is sensitive to heat, humidity, and dust, but also the need for very high resilience and failover requirements. Maintaining a stable temperature and humidity within tight tolerances is critical to IT system reliability.
-
-Air conditioning designs for most computer or server rooms will vary depending on various design considerations, but they are generally one of two types: "up-flow" and "down-flow" configurations.
-
-[Source](https://www.enviromon.net/how-to-monitor-server-room-temperature/)
-
-#### :eight_pointed_black_star: Fire protection
-
-The fire protection system's main goal should be to detect and alert of fire in the early stages, then bring fire under control without disrupting the flow of business and without threatening the personnel in the facility. Server room fire suppression technology has been around for as long as there have been server rooms.
-
-There are a series of things you need in a fire suppression system:
-
-- an emergency power off function
-- gas-based suppression system
-- fire detection sensors
-
-[Source](https://www.controlfiresystems.com/news/what-type-of-suppression-system-works-best-for-computer-room-fires/)
-
-#### :eight_pointed_black_star: Locked racks
-
-All systems should be securely fastened to something with a cable system, or locked in an equipment cage if possible. Case locks should be used when possible to slow attackers down.
-
-[Source](https://securitytoday.com/blogs/reaction/2018/02/Securing-the-Physical-Safety-of-Data-with-Rack-Level-Access-Control.aspx)
-
-#### :eight_pointed_black_star: Console security
-
-With physical access to most machines you can simply reboot the system and ask it nicely to launch into single user mode, or tell it to use `/bin/sh` for init.
-
-[Source](https://www.tldp.org/HOWTO/Security-HOWTO/physical-security.html)
-
-#### :eight_pointed_black_star: BIOS protection
-
-In the program itself to edit the BIOS settings:
-
-- only boot from specific drive
-- disable the unused controllers
-- disable the booting from external media devices (USB/CD/DVD)
-- enable BIOS password
-
-You need to protect the BIOS of the host with a password so the end-user won’t be able to change and override the security settings in the BIOS.
-
-Main reasons for password protecting the BIOS:
-
-- preventing changes to BIOS settings
-- preventing system booting
-
-Because the methods for setting a BIOS password vary between computer manufacturers, consult the computer's manual for specific instructions.
-
-  > For this reason, it is good practice to lock the computer case if possible. However, consult the manual for the computer or motherboard before attempting to disconnect the CMOS battery.
-  
-[Source](https://csrc.nist.gov/csrc/media/publications/sp/800-147b/final/documents/draft-sp800-147b_july2012.pdf)
-
-#### :ballot_box_with_check: Summary checklist
-
-| <b>Item</b> | <b>True</b> | <b>False</b> |
-| :---        | :---:       | :---:        |
-| Physically secure machine (also outside of a server room) | :black_square_button: | :black_square_button: |
-| Monitoring server rooms with CCTV or wired cameras | :black_square_button: | :black_square_button: |
-| Remotely monitoring the temperature | :black_square_button: | :black_square_button: |
-| Efficient air conditioning solution | :black_square_button: | :black_square_button: |
-| Efficient fire protection system | :black_square_button: | :black_square_button: |
-| Locked cage (server case) | :black_square_button: | :black_square_button: |
-| Physical access to server console | :black_square_button: | :black_square_button: |
-| Password on the BIOS | :black_square_button: | :black_square_button: |
-| Disable external media devices | :black_square_button: | :black_square_button: |
-| Periodic physical inspections | :black_square_button: | :black_square_button: |
-
 ### Hard disk encryption
 
 #### :information_source: Introduction
@@ -279,7 +182,7 @@ Before this you should to answer the following questions:
   * before boot process
   * during boot process
   * mixed above or manually
-  
+
 [Source](https://uchicago.service-now.com/it?id=kb_article&kb=KB06000398)
 
 #### :eight_pointed_black_star: Encrypt root filesystem
@@ -637,7 +540,7 @@ Run the following command to disable cups:
 ### Nginx
 
 Nginx is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server, originally written by [Igor Sysoev](http://sysoev.ru/en/).
-It's used worldwide, and is one of best tools at what it does. Default configuration that comes with it, however, is not very security oriented, and it requires some work to set it up properly. That's what this section aims to help you with. 
+It's used worldwide, and is one of best tools at what it does. Default configuration that comes with it, however, is not very security oriented, and it requires some work to set it up properly. That's what this section aims to help you with.
 
 [Source](https://nginx.org/en/)
 
@@ -658,11 +561,11 @@ Script for setting all files permissions to `0644`:
 find /var/www/html -type f -exec chmod 644 {} \;
 ```
 
-Whatever you do, never grant `0777` permissions to files, nor folders. 
+Whatever you do, never grant `0777` permissions to files, nor folders.
 
 #### :eight_pointed_black_star: Use HTTPS
 
-In this day and age, with services like [Let's Encrypt](https://letsencrypt.org/), there's no excuse not to use HTTPS for your website. 
+In this day and age, with services like [Let's Encrypt](https://letsencrypt.org/), there's no excuse not to use HTTPS for your website.
 
 This example configuration also includes stronger cihper suite, ssl session adjustments, HSTS header, stronger DHE parameter, and OSCP Stapling.
 
@@ -677,12 +580,12 @@ server {
         return 301 https://$host$request_uri;
         server_tokens off;
 }
- 
+
 server {
         listen 443 ssl default_server;
         listen [::]:443 ssl;
- 
-        server_name example.com; 
+
+        server_name example.com;
         server_tokens off;
 
         ssl     on;
@@ -691,7 +594,7 @@ server {
         ssl_session_timeout 1d;
         ssl_session_cache shared:SSL:50m;
         ssl_session_tickets off;
-        ssl_protocols TLSv1.2;         
+        ssl_protocols TLSv1.2;
         ssl_ciphers 'ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA:ECDHE-ECDSA-DES-CBC3-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DES-CBC3-SHA:!DSS';
         ssl_prefer_server_ciphers on;
         ssl_stapling on;
@@ -733,12 +636,12 @@ server {
         return 301 https://$host$request_uri;
         server_tokens off;
 }
- 
+
 server {
         listen 443 ssl http2 default_server;
         listen [::]:443 ssl http2;
- 
-        server_name example.com; 
+
+        server_name example.com;
         server_tokens off;
 
         ssl     on;
@@ -770,7 +673,7 @@ server {
         }
 
 }
- 
+
 server {
         listen 80;
         listen [::]:80;
@@ -782,7 +685,7 @@ server {
 
         location / {
           try_files $uri $uri/ =404;
-        }     
+        }
 }
 ```
 
@@ -790,7 +693,7 @@ server {
 
 This config entry is responsible for permanently redirecting all HTTP traffic to HTTPS. It will redirect all visitors that try to access website through HTTP on port 80, to HTTPS on port 443:
 
-`return 301 https://$host$request_uri;` 
+`return 301 https://$host$request_uri;`
 
 **Example config:**
 
@@ -803,12 +706,12 @@ server {
         return 301 https://$host$request_uri;
         server_tokens off;
 }
- 
+
 server {
         listen 443 ssl http2 default_server;
         listen [::]:443 ssl http2;
- 
-        server_name example.com; 
+
+        server_name example.com;
         server_tokens off;
 
         ssl     on;
@@ -844,12 +747,12 @@ server {
         return 301 https://$host$request_uri;
         server_tokens off;
 }
- 
+
 server {
         listen 443 ssl http2 default_server;
         listen [::]:443 ssl http2;
- 
-        server_name example.com; 
+
+        server_name example.com;
         server_tokens off;
 
         ssl     on;
@@ -862,7 +765,7 @@ server {
 
 #### :eight_pointed_black_star: Diffie Hellman Ephemeral Parameter
 
-All versions of nginx as of 1.4.4 rely on OpenSSL for input parameters to Diffie-Hellman (DH). Unfortunately, this means that Ephemeral Diffie-Hellman (DHE) will use OpenSSL's defaults, which include a 1024-bit key for the key-exchange. 
+All versions of nginx as of 1.4.4 rely on OpenSSL for input parameters to Diffie-Hellman (DH). Unfortunately, this means that Ephemeral Diffie-Hellman (DHE) will use OpenSSL's defaults, which include a 1024-bit key for the key-exchange.
 This example aims to generate stronger DHE parameter:
 
 ```bash

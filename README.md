@@ -18,6 +18,10 @@
     <img src="https://img.shields.io/badge/Branch-master-green.svg?longCache=true"
         alt="Branch">
   </a>
+  <a href="https://github.com/trimstray/the-practical-linux-hardening-guide/pulls">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?longCache=true"
+        alt="Pull Requests">
+  </a>
   <a href="http://www.gnu.org/licenses/">
     <img src="https://img.shields.io/badge/License-GNU-blue.svg?longCache=true"
         alt="License">
@@ -39,8 +43,6 @@
 <br>
 
 :collision: Work in progress, just a moment... First, I update a [Table Of Content](#table-of-content) and chapters.
-
-If you want to support another repository containing **hardening** recipes, please see: [linux-hardening-checklist](https://github.com/trimstray/linux-hardening-checklist) - it's a simple checklist with the most important hardening rules.
 
 ****
 

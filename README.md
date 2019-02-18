@@ -38,10 +38,6 @@
 
 <br>
 
-<p align="center">All suggestions and pull requests are welcome!</p>
-
-<br>
-
 :collision: Work in progress, just a moment... First, I update a [Table Of Content](#table-of-content) and chapters.
 
 ****

@@ -186,7 +186,7 @@ This Hardening Guide provide a high-level overview of the security hardening GNU
 
 Before you start remember:
 
-  > The Practical Linux Hardening Guide also contains my comments that may be  differ from certain industry standards. If you are not sure what to do please see [Policy Compliance](#policy-compliance).
+  > The Practical Linux Hardening Guide also contains my comments that may be  differ from certain industry standards. If you are not sure what to do please see [Policy Compliance](#policy-compliance) and think about what you actually do at your server.
 
 ### The importance of Linux hardening
 

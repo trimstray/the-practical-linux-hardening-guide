@@ -164,6 +164,10 @@
     + [Redis](#redis)
   * [Queues](#queues)
     + [AMQP](#amqp)
+- **[Containers](#containers)**
+  * [LXC/LXD](#lxc-lxd)
+  * [Docker](#docker)
+  * [Hashicorp suite](#hashicorp-suite)
 - **[Deployment](#deployment)**
 - **[Testing configuration](#testing-configuration)**
 - **[External resources](#external-resources)**

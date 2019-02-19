@@ -214,15 +214,21 @@ We have a lot of great GNU/Linux hardening policies to provide safer operating s
 
 ### Center of Internet Security (CIS)
 
-The [Center for Internet Security (CIS)](https://www.cisecurity.org/cis-benchmarks/) is a nonprofit organization focused on improving public and private-sector cybersecurity readiness and response.
+The Center for Internet Security (CIS) is a nonprofit organization focused on improving public and private-sector cybersecurity readiness and response.
+
+Please see **[CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks/)**.
 
 ### Security Technical Implementation Guide (STIG)
 
-A [Security Technical Implementation Guide (STIG)](https://www.stigviewer.com/stigs) is a cybersecurity methodology for standardizing security protocols within networks, servers, computers, and logical designs to enhance overall security.
+A Security Technical Implementation Guide (STIG) is a cybersecurity methodology for standardizing security protocols within networks, servers, computers, and logical designs to enhance overall security.
+
+Please see **[Stigviewer](https://www.stigviewer.com/stigs)** for explore all stigs.
 
 ### Security Content Automation Protocol (SCAP)
 
-Security Content Automation Protocol (SCAP) provides a mechanism to check configurations, vulnerability management and evaluate policy compliance for a variety of systems. One of the most popular implementations of SCAP is [OpenSCAP](https://www.open-scap.org/security-policies/) and it is very helpful for vulnerability assessment and also as hardening helper.
+Security Content Automation Protocol (SCAP) provides a mechanism to check configurations, vulnerability management and evaluate policy compliance for a variety of systems.
+
+One of the most popular implementations of SCAP is [OpenSCAP](https://www.open-scap.org/security-policies/) and it is very helpful for vulnerability assessment and also as hardening helper.
 
 ## DevSec Hardening Framework
 

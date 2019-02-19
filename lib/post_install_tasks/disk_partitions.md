@@ -197,6 +197,11 @@ swapon -a
 
 #### :eight_pointed_black_star: Disk quotas
 
+###### Useful resources
+
+- [The Lost Art of Disk Quota Management](https://linuxacademy.com/blog/linux/the-lost-art-of-disk-quota-management/)
+- [Disk quota](https://wiki.archlinux.org/index.php/disk_quota)
+
 #### :ballot_box_with_check: Summary checklist
 
 | <b>Item</b> | <b>True</b> | <b>False</b> |

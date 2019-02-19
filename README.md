@@ -38,7 +38,7 @@
 
 <br>
 
-<p align="center">"<b>STATUS:</b><code>I'm back, work in progress...</code>
+<p align="center"><code>I'm back, work in progress...</code>
 
 ****
 
@@ -46,6 +46,16 @@
 
 - **[Contributing](#contributing)**
 - **[Pre install tasks](#pre-install-tasks)**
+  * **[Physical system security](#physical-system-security)**
+    + [Introduction](#information_source-introduction)
+    + [Secure rooms](#eight_pointed_black_star-secure-rooms)
+    + [Monitoring](#eight_pointed_black_star-monitoring)
+    + [Air conditioning](#eight_pointed_black_star-air-conditioning)
+    + [Fire protection](#eight_pointed_black_star-fire-protection)
+    + [Locked racks](#eight_pointed_black_star-locked-racks)
+    + [Console security](#eight_pointed_black_star-console-security)
+    + [BIOS protection](#eight_pointed_black_star-bios-protection)
+    + [Summary checklist](#ballot_box_with_check-summary-checklist)
   * **[Hard disk encryption](#hard-disk-encryption)**
     + [Introduction](#information_source-introduction-1)
     + [Encrypt root filesystem](#eight_pointed_black_star-encrypt-root-filesystem)

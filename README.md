@@ -54,7 +54,7 @@
   * [Security Content Automation Protocol (SCAP)](#security-content-automation-protocol-scap)
 - **[DevSec Hardening Framework](#devsec-hardening-framework)**
 - **[Contributing](#contributing)**
-- **[Other hardening guides](#other-hardening-guides)**
+- **[Other official hardening guides](#other-official-hardening-guides)**
 - **[Pre install tasks](#pre-install-tasks)**
   * **[Physical system security](lib/pre_install_tasks/physical_system_security.md#physical-system-security)**
     + [Introduction](lib/pre_install_tasks/physical_system_security.md#information_source-introduction)
@@ -194,7 +194,7 @@ Out of the box, Linux servers don’t come "hardened" (e.g. with the attack surf
 
 ### How to hardening GNU/Linux?
 
-In my opinion you should definitely drop all non-industry policies, articles, manuals and other. We have a lot of great GNU/Linux hardening [Policy Compliance](#policy-compliance) to provide safer operating systems compatible with security protocols and security policies.
+In my opinion you should definitely drop all non-industry policies, articles, manuals and other. We have a lot of great GNU/Linux hardening [policies](#policy-compliance) to provide safer operating systems compatible with security protocols and security policies.
 
   > Primarily you should use Security Benchmarks/Policies which describe consensus best practices for the secure configuration of target systems because configuring your systems in compliance with e.g. CIS has been shown to eliminate 80-95% of known security vulnerabilities.
 
@@ -228,9 +228,9 @@ If you find something which doesn't make sense, or one of these doesn't seem rig
 
 Before add pull request please see **[this](CONTRIBUTING.md)**.
 
-## Other hardening guides
+## Other official hardening guides
 
-| <b><u>Type of list</u></b> | <b><u>Comment</u></b> |
+| <b><u>Type of hardening guide</u></b> | <b><u>Comments</u></b> |
 | :---         | :---         |
 | <b>[STIGs Master List](https://iase.disa.mil/stigs/Pages/a-z.aspx)</b> ||
 | <b>[Arch Linux](https://wiki.archlinux.org/index.php/Security)</b> ||

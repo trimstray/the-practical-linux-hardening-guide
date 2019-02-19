@@ -45,7 +45,7 @@
 ## Table of Contents
 
 - **[Introduction](#introduction)**
-- **[Policy Compliance (Hardening standards)](#policy-compliance-hardening-standards)**
+- **[Policy Compliance](#policy-compliance)**
   * [Center of Internet Security (CIS)](#center-of-internet-security-cis)
   * [Security Technical Implementation Guide (STIG)](#security-technical-implementation-guide-stig)
   * [Security Content Automation Protocol (SCAP)](#security-content-automation-protocol-scap)
@@ -179,7 +179,7 @@
 
 This Hardening Guide provide a high-level overview of the security hardening GNU/Linux systems.
 
-## Policy Compliance (Hardening standards)
+## Policy Compliance
 
 ### Center of Internet Security (CIS)
 
@@ -187,7 +187,7 @@ The [Center for Internet Security (CIS)](https://www.cisecurity.org/cis-benchmar
 
 ### Security Technical Implementation Guide (STIG)
 
-A [Security Technical Implementation Guide (STIG)]((https://www.stigviewer.com/stigs)) is a cybersecurity methodology for standardizing security protocols within networks, servers, computers, and logical designs to enhance overall security.
+A [Security Technical Implementation Guide (STIG)](https://www.stigviewer.com/stigs) is a cybersecurity methodology for standardizing security protocols within networks, servers, computers, and logical designs to enhance overall security.
 
 ### Security Content Automation Protocol (SCAP)
 

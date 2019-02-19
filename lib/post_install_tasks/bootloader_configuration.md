@@ -1,3 +1,5 @@
+## Post install tasks
+
 ### Bootloader configuration (grub)
 
 #### :information_source: Introduction

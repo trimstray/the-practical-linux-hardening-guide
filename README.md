@@ -55,7 +55,7 @@
 - **[DevSec Hardening Framework](#devsec-hardening-framework)**
 - **[Contributing](#contributing)**
 - **[External resources](#external-resources)**
-  * **[Other official hardening guides](#other-official-hardening-guides)**
+  * [Other official hardening guides](#other-official-hardening-guides)
 - **[Pre install tasks](#pre-install-tasks)**
   * **[Physical system security](lib/pre_install_tasks/physical_system_security.md#physical-system-security)**
     + [Introduction](lib/pre_install_tasks/physical_system_security.md#information_source-introduction)

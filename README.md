@@ -180,7 +180,7 @@ This project covered a lot of the things in this guide, which can be automated (
 
 Project: **[DevSec Hardening Framework](https://dev-sec.io)** + GH repository: **[dev-sec](https://github.com/dev-sec/)**.
 
-Thanks for **@artem-sidorenko**!
+Thanks for **[@artem-sidorenko](https://github.com/artem-sidorenko)**!
 
 ## Contributing
 

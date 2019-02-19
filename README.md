@@ -200,7 +200,7 @@ Before you start remember:
 
 Out of the box, Linux servers don’t come "hardened" (e.g. with the attack surface minimized). It’s up to you to prepare for each eventuality and set up systems to notify you of any suspicious activity in the future.
 
-You need to harden your system to protect your assets as much as possible. Why it's important? Please see a great and short article that explains hardening process step by step: [Linux hardening steps for starters](https://linux-audit.com/linux-server-hardening-most-important-steps-to-secure-systems/) by [Michael Boelen](https://michaelboelen.com/).
+You need to harden your system to protect your assets as much as possible. Why it's important? Please read a great and short article that [explains hardening process](https://linux-audit.com/linux-server-hardening-most-important-steps-to-secure-systems/) step by step by [Michael Boelen](https://michaelboelen.com/).
 
 ### How to hardening Linux?
 

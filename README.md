@@ -90,12 +90,13 @@
     + [Disk quotas](lib/post_install_tasks/disk_partitions.md#eight_pointed_black_star-disk-quotas)
     + [Summary checklist](lib/post_install_tasks/disk_partitions.md#ballot_box_with_check-summary-checklist)
   * **[Keep system updated](#keep-system-updated)**
-  * [Package management](#package-management)
+  * **[Package management](#package-management)**
     + [Automatic security updates](#automatic-security-updates)
     + [Remove packages with known issues](#remove-packages-with-known-issues)
-  * [Netfilter ruleset](#netfilter-ruleset)
-  * [TCP wrapper](#tcp-wrapper)
-  * [Users and groups](#users-and-groups)
+  * **[Netfilter ruleset](#netfilter-ruleset)**
+    + [Shorewall](#shorewall)
+  * **[TCP wrapper](#tcp-wrapper)**
+  * **[Users and groups](#users-and-groups)**
     + [Limit su access](#limit-su-access)
     + [Disable root account](#disable-root-account)
     + [Logins to system console](#logins-to-system-console)
@@ -105,53 +106,58 @@
     + [Previous passwords](#previous-passwords)
     + [Login failures](#login-failures)
     + [Protect single user mode](#protect-single-user-mode)
-  * [System path permissions](#system-path-permissions)
+  * **[System path permissions](#system-path-permissions)**
     + [World writable files](#world-writable-files)
-  * [PAM module](#pam-module)
-  * [Limits](#limits)
-  * [Shadow passwords](#shadow-passwords)
-  * [Linux kernel hardening](#linux-kernel-hardening)
+  * **[PAM module](#pam-module)**
+  * **[Limits](#limits)**
+  * **[Shadow passwords](#shadow-passwords)**
+  * **[Linux kernel hardening](#linux-kernel-hardening)**
     + [Kernel parameters](#kernel-parameters)
       + [Network security](#improve-network-security)
       + [System security](#improve-system-security)
-  * [Remove unused modules](#remove-unused-modules)
-  * [Secure shared memory](#secure-shared-memory)
-  * [IRQ balance](#irq-balance)
-  * [Disable compilers](#disable-compilers)
-  * [Email notifications](#email-notifications)
+  * **[Remove unused modules](#remove-unused-modules)**
+  * **[Secure shared memory](#secure-shared-memory)**
+  * **[IRQ balance](#irq-balance)**
+  * **[Disable compilers](#disable-compilers)**
+  * **[Email notifications](#email-notifications)**
     + [Rebooting the system](#rebooting-the-system)
-  * [Backups](#backups)
-  * [External devices](#external-devices)
+    + [Login the system](#login-the-system)
+  * **[Backups](#backups)**
+    + [Backup policy](#backup-policy)
+  * **[External devices](#external-devices)**
     + [Disable USB usage](#disable-usb-usage)
 - **[Tools](#tools)**
-  * [Logging and Auditing](#logging-and-auditing)
+  * **[Logging and Auditing](#logging-and-auditing)**
     + [Auditd](#auditd)
+    + [OSSEC](#ossec)
     + [Tiger](#tiger)
     + [Aide](#aide)
     + [Logwatch](#logwatch)
-  * [Other](#other)
+  * **[SELinux](#selinux)
+  * **[Other](#other)**
     + [Fail2ban](#fail2ban)
     + [PSAD](#psad)
-    + [SELinux](#selinux)
     + [Entropy daemon](#entropy-daemon)
     + [Centralized authentication service](#centralized-authentication-service)
-  * [Testing tools](#testing-tools)
+  * **[Testing tools](#testing-tools)**
     + [Lynis](#lynis)
     + [Chrootkit](#chrootkit)
 - **[Services](#services)**
   * **[Disable all unnecessary services](lib/services/disable_all_unnecessary_services.md#disable-all-unnecessary-services)**
     + [Common unix print system](lib/services/disable_all_unnecessary_services.md#eight_pointed_black_star-common-unix-print-system)
     + [Summary checklist](lib/services/disable_all_unnecessary_services.md#ballot_box_with_check-summary-checklist)
-  * [System services](#system-services)
+  * **[System services](#system-services)**
     + [OpenSSH](#openssh)
     + [NTP](#ntp)
     + [Cron](#cron)
     + [Anacron](#anacron)
     + [GnuPG 2](#gnupg2)
       + [Unattended key generation](#unattended-key-generation)
-  * [DNS services](#dns-services)
+  * **[DNS services](#dns-services)**
     + [Bind9](#bind9)
-  * [Mail services](#mail-services)
+    + [Unbound](#unbound)
+    + [Knot Resolver](#knot-resolver)
+  * **[Mail services](#mail-services)**
     + [Postfix](#postfix)
   * **[Web services](lib/services/web_services.md#web-services)**
     + [Nginx](lib/services/web_services.md#nginx)
@@ -164,19 +170,18 @@
       - [Diffie Hellman Ephemeral Parameter](lib/services/web_services.md#eight_pointed_black_star-diffie-hellman-ephemeral-parameter)
       - [Security related headers](lib/services/web_services.md#eight_pointed_black_star-security-related-headers)
     + [Apache](#apache)
-  * [Databases](#databases)
+  * **[Databases](#databases)**
     + [PostgreSQL](#postgresql)
     + [MySQL](#mysql)
     + [Redis](#redis)
-  * [Queues](#queues)
+  * **[Queues](#queues)**
     + [AMQP](#amqp)
 - **[Containers](#containers)**
-  * [LXC/LXD](#lxc-lxd)
-  * [Docker](#docker)
-  * [Hashicorp suite](#hashicorp-suite)
+  * **[LXC/LXD](#lxc-lxd)**
+  * **[Docker](#docker)**
+  * **[Hashicorp suite](#hashicorp-suite)**
 - **[Deployment](#deployment)**
 - **[Testing configuration](#testing-configuration)**
-- **[External resources](#external-resources)**
 
 ## Introduction
 

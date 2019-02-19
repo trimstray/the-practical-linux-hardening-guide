@@ -182,7 +182,9 @@
 
 ### General disclaimer
 
-The Practical Linux Hardening Guide provide a high-level overview of the security hardening GNU/Linux systems. It is not an official standard but it _touches_ and _use_ industry standards.
+**The Practical Linux Hardening Guide** provide a high-level overview of the security hardening GNU/Linux systems. It is not an official standard but it _touches_ and _use_ industry standards.
+
+This guide provides you with practical step-by-step instructions for building your own hardened system and services.
 
 - this guide does not exhaust everything about Systems/Linux Hardening
 - some hardening rules can be done better
@@ -196,11 +198,13 @@ Before you start remember:
 
 Out of the box, Linux servers don’t come "hardened" (e.g. with the attack surface minimized). It’s up to you to prepare for each eventuality and set up systems to notify you of any suspicious activity in the future.
 
-Why it's important? Please see a great and short article that explains hardening process step by step: [Linux hardening steps for starters](https://linux-audit.com/linux-server-hardening-most-important-steps-to-secure-systems/).
+You need to harden your system to protect your assets as much as possible. Why it's important? Please see a great and short article that explains hardening process step by step: [Linux hardening steps for starters](https://linux-audit.com/linux-server-hardening-most-important-steps-to-secure-systems/).
 
 ### How to hardening Linux?
 
-In my opinion you should definitely drop all non-industry policies, articles, manuals and other on your production environments. We have a lot of great GNU/Linux hardening policies to provide safer operating systems compatible with security protocols and security policies.
+In my opinion you should definitely drop all non-industry policies, articles, manuals and other especially on your production environments. This stuff exist to give false sense of security.
+
+We have a lot of great GNU/Linux hardening policies to provide safer operating systems compatible with security protocols.
 
   > Most of all you should use [Security Benchmarks/Policies](#policy-compliance) which describe consensus best practices for the secure configuration of target systems because configuring your systems in compliance with e.g. CIS has been shown to eliminate 80-95% of known security vulnerabilities.
 

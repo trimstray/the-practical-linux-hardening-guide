@@ -44,6 +44,9 @@
 
 ## Table of Contents
 
+- **[Introduction](#introduction)**
+- **[Hardening standards](#hardening-standards)**
+- **[DevSec Hardening Framework](#devsec-hardening-framework)
 - **[Contributing](#contributing)**
 - **[Other hardening guides](#other-hardening-guides)**
 - **[Pre install tasks](#pre-install-tasks)**
@@ -164,6 +167,20 @@
 - **[Deployment](#deployment)**
 - **[Testing configuration](#testing-configuration)**
 - **[External resources](#external-resources)**
+
+## Introduction
+
+## Hardening standards
+
+## DevSec Hardening Framework
+
+  > Security + DevOps: Automatic Server Hardening.
+
+This project covered a lot of the things in this guide, which can be automated (e.g. setting of grub password or enforcing the permissions of the common directories).
+
+Project: **[DevSec Hardening Framework](https://dev-sec.io)** + GH repository: **[dev-sec](https://github.com/dev-sec/)**.
+
+Thanks for **@artem-sidorenko**!
 
 ## Contributing
 

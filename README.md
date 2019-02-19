@@ -182,7 +182,7 @@
 
 ### General disclaimer
 
-This Hardening Guide provide a high-level overview of the security hardening GNU/Linux systems. It is not an official standard but it _touches_ and _use_ industry standards.
+The Practical Linux Hardening Guide provide a high-level overview of the security hardening GNU/Linux systems. It is not an official standard but it _touches_ and _use_ industry standards.
 
 - this guide does not exhaust everything about Systems/Linux Hardening
 - some hardening rules can be done better
@@ -190,7 +190,7 @@ This Hardening Guide provide a high-level overview of the security hardening GNU
 
 Before you start remember:
 
-  > The Practical Linux Hardening Guide also contains my comments that may be  differ from certain industry principles. If you are not sure what to do please see [Policy Compliance](#policy-compliance) chapter and think about what you actually do at your server.
+  > This guide also contains my comments that may be  differ from certain industry principles. If you are not sure what to do please see [Policy Compliance](#policy-compliance) chapter and think about what you actually do at your server.
 
 ### The importance of Linux hardening
 

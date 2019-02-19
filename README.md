@@ -184,11 +184,11 @@
 
 **The Practical Linux Hardening Guide** provides a high-level overview of the security hardening GNU/Linux systems. It is not an official standard or handbook but it _touches_ and _use_ industry standards.
 
-This guide also provides you with practical step-by-step instructions for building your own hardened systems and services.
+This guide also provides you with _practical step-by-step instructions_ for building your own hardened systems and services.
 
 A few simple rules for this project:
 
-- this guide does not exhaust everything about Systems/Linux Hardening
+- this guide does not exhaust everything about Linux Hardening
 - some hardening rules can be done better
 - you can think of it also as a checklist
 
@@ -200,7 +200,7 @@ Before you start remember:
 
 Out of the box, Linux servers don’t come "hardened" (e.g. with the attack surface minimized). It’s up to you to prepare for each eventuality and set up systems to notify you of any suspicious activity in the future.
 
-You need to harden your system to protect your assets as much as possible. Why it's important? Please see a great and short article that explains hardening process step by step: [Linux hardening steps for starters](https://linux-audit.com/linux-server-hardening-most-important-steps-to-secure-systems/).
+You need to harden your system to protect your assets as much as possible. Why it's important? Please see a great and short article that explains hardening process step by step: [Linux hardening steps for starters](https://linux-audit.com/linux-server-hardening-most-important-steps-to-secure-systems/) by [Michael Boelen](https://michaelboelen.com/).
 
 ### How to hardening Linux?
 

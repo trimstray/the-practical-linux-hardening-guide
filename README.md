@@ -42,10 +42,13 @@
 
 ****
 
-## Table of Contents
+# Table of Contents
 
 - **[Introduction](#introduction)**
-- **[Hardening standards](#hardening-standards)**
+- **[Policy Compliance (Hardening standards)](#policy-compliance-hardening-standards)**
+  * [Center of Internet Security (CIS)](#center-of-internet-security-cis)
+  * [Security Technical Implementation Guide (STIG)](#security-technical-implementation-guide-stig)
+  * [Security Content Automation Protocol (SCAP)](#security-content-automation-protocol-scap)
 - **[DevSec Hardening Framework](#devsec-hardening-framework)**
 - **[Contributing](#contributing)**
 - **[Other hardening guides](#other-hardening-guides)**
@@ -172,13 +175,27 @@
 - **[Testing configuration](#testing-configuration)**
 - **[External resources](#external-resources)**
 
-## Introduction
+# Introduction
 
-## Hardening standards
+This Hardening Guide provide a high-level overview of the security hardening GNU/Linux systems.
 
-## DevSec Hardening Framework
+# Policy Compliance (Hardening standards)
 
-  > Security + DevOps: Automatic Server Hardening.
+## Center of Internet Security (CIS)
+
+The [Center for Internet Security (CIS)](https://www.cisecurity.org/cis-benchmarks/) is a nonprofit organization focused on improving public- and private-sector cybersecurity readiness and response.
+
+## Security Technical Implementation Guide (STIG)
+
+A [Security Technical Implementation Guide (STIG)]((https://www.stigviewer.com/stigs)) is a cybersecurity methodology for standardizing security protocols within networks, servers, computers, and logical designs to enhance overall security.
+
+## Security Content Automation Protocol (SCAP)
+
+Security Content Automation Protocol (SCAP) provides a mechanism to check configurations, vulnerability management and evaluate policy compliance for a variety of systems. One of the most popular implementations of SCAP is [OpenSCAP](https://www.open-scap.org/security-policies/) and it is very helpful for vulnerability assessment and also as hardening helper.
+
+# DevSec Hardening Framework
+
+  > _Security + DevOps: Automatic Server Hardening._
 
 This project covered a lot of the things in this guide, which can be automated (e.g. setting of grub password or enforcing the permissions of the common directories).
 
@@ -186,13 +203,13 @@ Project: **[DevSec Hardening Framework](https://dev-sec.io)** + GH repository: *
 
 Thanks for **[@artem-sidorenko](https://github.com/artem-sidorenko)**!
 
-## Contributing
+# Contributing
 
 If you find something which doesn't make sense, or one of these doesn't seem right, or something seems really stupid; please make a pull request or please add valid and well-reasoned opinions about your changes or comments.
 
 Before add pull request please see **[this](CONTRIBUTING.md)**.
 
-## Other hardening guides
+# Other hardening guides
 
 | <b><u>Type of list</u></b> | <b><u>Comment</u></b> |
 | :---         | :---         |

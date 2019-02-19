@@ -196,6 +196,8 @@ Before you start remember:
 
 Out of the box, Linux servers don’t come "hardened" (e.g. with the attack surface minimized). It’s up to you to prepare for each eventuality and set up systems to notify you of any suspicious activity in the future.
 
+Why it's important? Please see a great and short article that explains hardening process step by step: [Linux hardening steps for starters](https://linux-audit.com/linux-server-hardening-most-important-steps-to-secure-systems/).
+
 ### How to hardening Linux?
 
 In my opinion you should definitely drop all non-industry policies, articles, manuals and other on your production environments. We have a lot of great GNU/Linux hardening policies to provide safer operating systems compatible with security protocols and security policies.

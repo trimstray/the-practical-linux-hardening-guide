@@ -46,7 +46,7 @@
 
 - **[Introduction](#introduction)**
 - **[Hardening standards](#hardening-standards)**
-- **[DevSec Hardening Framework](#devsec-hardening-framework)
+- **[DevSec Hardening Framework](#devsec-hardening-framework)**
 - **[Contributing](#contributing)**
 - **[Other hardening guides](#other-hardening-guides)**
 - **[Pre install tasks](#pre-install-tasks)**

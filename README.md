@@ -184,9 +184,13 @@
 
 This Hardening Guide provide a high-level overview of the security hardening GNU/Linux systems. It is not an official standard but it _touches_ and _use_ industry standards.
 
+- this guide does not exhaust everything about Systems/Linux Hardening
+- some hardening rules can be done better
+- you can think of it also as a checklist
+
 Before you start remember:
 
-  > The Practical Linux Hardening Guide also contains my comments that may be  differ from certain industry standards. If you are not sure what to do please see [Policy Compliance](#policy-compliance) and think about what you actually do at your server.
+  > The Practical Linux Hardening Guide also contains my comments that may be  differ from certain industry principles. If you are not sure what to do please see [Policy Compliance](#policy-compliance) chapter and think about what you actually do at your server.
 
 ### The importance of Linux hardening
 
@@ -194,9 +198,9 @@ Out of the box, Linux servers don’t come "hardened" (e.g. with the attack surf
 
 ### How to hardening GNU/Linux?
 
-In my opinion you should definitely drop all non-industry policies, articles, manuals and other. We have a lot of great GNU/Linux hardening [policies](#policy-compliance) to provide safer operating systems compatible with security protocols and security policies.
+In my opinion you should definitely drop all non-industry policies, articles, manuals and other on your production environments. We have a lot of great GNU/Linux hardening policies to provide safer operating systems compatible with security protocols and security policies.
 
-  > Primarily you should use Security Benchmarks/Policies which describe consensus best practices for the secure configuration of target systems because configuring your systems in compliance with e.g. CIS has been shown to eliminate 80-95% of known security vulnerabilities.
+  > Most of all you should use [Security Benchmarks/Policies](#policy-compliance) which describe consensus best practices for the secure configuration of target systems because configuring your systems in compliance with e.g. CIS has been shown to eliminate 80-95% of known security vulnerabilities.
 
 ## Policy Compliance
 

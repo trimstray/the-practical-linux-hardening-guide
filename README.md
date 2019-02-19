@@ -194,7 +194,7 @@ This guide also provides you with _practical step-by-step instructions_ for buil
 
 A few simple rules for this project:
 
-- this guide does not exhaust everything about Linux Hardening
+- this guide does not exhaust everything about Linux hardening
 - some hardening rules can be done better
 - you can think of it also as a checklist
 
@@ -210,11 +210,13 @@ You need to harden your system to protect your assets as much as possible. Why i
 
 ### How to hardening Linux?
 
-In my opinion you should definitely drop all non-industry policies, articles, manuals and other especially on your production environments. This stuff exist to give false sense of security.
+In my opinion you should definitely drop all non-industry policies, articles, manuals and other (especially on your production environments but also if you harden standalone home server). This stuff exist to give false sense of security.
 
-We have a lot of great GNU/Linux hardening policies to provide safer operating systems compatible with security protocols. For me, CIS and the various NSA STIGs are about the best actual prescriptive guides.
+We have a lot of great GNU/Linux hardening policies to provide safer operating systems compatible with security protocols. For me, **CIS** and the various **NSA STIGs** are about the best actual prescriptive guides.
 
   > Most of all you should use [Security Benchmarks/Policies](#policy-compliance) which describe consensus best practices for the secure configuration of target systems because configuring your systems in compliance with e.g. CIS has been shown to eliminate 80-95% of known security vulnerabilities.
+
+On the other hand e.g. STIG itself is just a complicated (for newbies difficult to implement) check-list. In my opinion ideally, real world implementation is automated via something like OpenSCAP.
 
 ## Policy Compliance
 
@@ -234,7 +236,7 @@ Please see **[Stigviewer](https://www.stigviewer.com/stigs)** for explore all st
 
 Security Content Automation Protocol (SCAP) provides a mechanism to check configurations, vulnerability management and evaluate policy compliance for a variety of systems.
 
-One of the most popular implementations of SCAP is [OpenSCAP](https://www.open-scap.org/security-policies/) and it is very helpful for vulnerability assessment and also as hardening helper.
+One of the most popular implementations of SCAP is **[OpenSCAP](https://www.open-scap.org/security-policies/)** and it is very helpful for vulnerability assessment and also as hardening helper.
 
 ## DevSec Hardening Framework
 

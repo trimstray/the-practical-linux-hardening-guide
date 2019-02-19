@@ -45,6 +45,7 @@
 ## Table Of Contents
 
 - **[Contributing](#contributing)**
+- **[Other hardening guides](#other-hardening-guides)**
 - **[Pre install tasks](#pre-install-tasks)**
   * **[Physical system security](lib/pre_install_tasks/physical_system_security.md#physical-system-security)**
     + [Introduction](lib/pre_install_tasks/physical_system_security.md#information_source-introduction)
@@ -169,3 +170,15 @@
 If you find something which doesn't make sense, or one of these doesn't seem right, or something seems really stupid; please make a pull request or please add valid and well-reasoned opinions about your changes or comments.
 
 Before add pull request please see **[this](CONTRIBUTING.md)**.
+
+## Other hardening guides
+
+| <b><u>Distribution</u></b> | <b><u>Comment</u></b> |
+| :---         | :---         |
+| <b>[Arch Linux](https://wiki.archlinux.org/index.php/Security)</b> ||
+| <b>[CentOS Linux](https://wiki.centos.org/HowTos/OS_Protection)</b> ||
+| <b>[Debian GNU/Linux](https://www.debian.org/doc/manuals/securing-debian-howto/index.en.html)</b> | old guide|
+| <b>[Fedora Linux](https://docs.fedoraproject.org/en-US/Fedora/19/html/Security_Guide/index.html)</b> | old guide |
+| <b>[Red Hat Enterprise](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/)</b> ||
+| <b>[Slackware Linux](https://docs.slackware.com/howtos:security:start)</b> | limited |
+| <b>[Ubuntu Linux](https://help.ubuntu.com/lts/serverguide/security.html.en)</b> | limited |

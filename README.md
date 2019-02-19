@@ -47,7 +47,7 @@
 - **[Introduction](#introduction)**
   * [General disclaimer](#general-disclaimer)
   * [The importance of Linux hardening](#the-importance-of-linux-hardening)
-  * [How to hardening GNU/Linux?](#how-to-hardening-gnulinux)
+  * [How to hardening Linux?](#how-to-hardening-linux)
 - **[Policy Compliance](#policy-compliance)**
   * [Center of Internet Security (CIS)](#center-of-internet-security-cis)
   * [Security Technical Implementation Guide (STIG)](#security-technical-implementation-guide-stig)
@@ -196,7 +196,7 @@ Before you start remember:
 
 Out of the box, Linux servers don’t come "hardened" (e.g. with the attack surface minimized). It’s up to you to prepare for each eventuality and set up systems to notify you of any suspicious activity in the future.
 
-### How to hardening GNU/Linux?
+### How to hardening Linux?
 
 In my opinion you should definitely drop all non-industry policies, articles, manuals and other on your production environments. We have a lot of great GNU/Linux hardening policies to provide safer operating systems compatible with security protocols and security policies.
 

@@ -182,9 +182,11 @@
 
 ### General disclaimer
 
-**The Practical Linux Hardening Guide** provide a high-level overview of the security hardening GNU/Linux systems. It is not an official standard but it _touches_ and _use_ industry standards.
+**The Practical Linux Hardening Guide** provides a high-level overview of the security hardening GNU/Linux systems. It is not an official standard or handbook but it _touches_ and _use_ industry standards.
 
-This guide provides you with practical step-by-step instructions for building your own hardened system and services.
+This guide also provides you with practical step-by-step instructions for building your own hardened systems and services.
+
+A few simple rules for this project:
 
 - this guide does not exhaust everything about Systems/Linux Hardening
 - some hardening rules can be done better

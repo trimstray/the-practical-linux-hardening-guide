@@ -12,7 +12,7 @@ Basically when you want to prohibit unauthorized reconfiguring of your system, o
 
 You can set password for the bootloader for prevents users from entering single user mode, changing settings at boot time, access to the bootloader console, reset the root password, if there is no password for GRUB-menu or access to non-secure operating systems.
 
-###### Generate password hash
+##### Generate password hash
 
 ```bash
 # Debian like distributions
@@ -22,7 +22,7 @@ grub-mkpasswd-pbkdf2
 grub2-mkpasswd-pbkdf2
 ```
 
-###### Updated grub configuration
+##### Updated grub configuration
 
 ```bash
 cat > /etc/grub.d/01_hash << __EOF__
@@ -41,6 +41,10 @@ grub-mkconfig > /boot/grub/grub.cfg
 # RedHat like distributions
 grub2-mkconfig > /boot/grub2/grub.cfg
 ```
+
+###### Useful resources
+
+- [How To Password Protect GRUB Bootloader In Linux](https://www.ostechnix.com/password-protect-grub-bootloader-linux/)
 
 #### :eight_pointed_black_star: Protect bootloader config files
 

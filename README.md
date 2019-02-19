@@ -42,7 +42,7 @@
 
 ****
 
-# Table of Contents
+## Table of Contents
 
 - **[Introduction](#introduction)**
 - **[Policy Compliance (Hardening standards)](#policy-compliance-hardening-standards)**
@@ -175,25 +175,25 @@
 - **[Testing configuration](#testing-configuration)**
 - **[External resources](#external-resources)**
 
-# Introduction
+## Introduction
 
 This Hardening Guide provide a high-level overview of the security hardening GNU/Linux systems.
 
-# Policy Compliance (Hardening standards)
+## Policy Compliance (Hardening standards)
 
-## Center of Internet Security (CIS)
+### Center of Internet Security (CIS)
 
 The [Center for Internet Security (CIS)](https://www.cisecurity.org/cis-benchmarks/) is a nonprofit organization focused on improving public- and private-sector cybersecurity readiness and response.
 
-## Security Technical Implementation Guide (STIG)
+### Security Technical Implementation Guide (STIG)
 
 A [Security Technical Implementation Guide (STIG)]((https://www.stigviewer.com/stigs)) is a cybersecurity methodology for standardizing security protocols within networks, servers, computers, and logical designs to enhance overall security.
 
-## Security Content Automation Protocol (SCAP)
+### Security Content Automation Protocol (SCAP)
 
 Security Content Automation Protocol (SCAP) provides a mechanism to check configurations, vulnerability management and evaluate policy compliance for a variety of systems. One of the most popular implementations of SCAP is [OpenSCAP](https://www.open-scap.org/security-policies/) and it is very helpful for vulnerability assessment and also as hardening helper.
 
-# DevSec Hardening Framework
+## DevSec Hardening Framework
 
   > _Security + DevOps: Automatic Server Hardening._
 
@@ -203,13 +203,13 @@ Project: **[DevSec Hardening Framework](https://dev-sec.io)** + GH repository: *
 
 Thanks for **[@artem-sidorenko](https://github.com/artem-sidorenko)**!
 
-# Contributing
+## Contributing
 
 If you find something which doesn't make sense, or one of these doesn't seem right, or something seems really stupid; please make a pull request or please add valid and well-reasoned opinions about your changes or comments.
 
 Before add pull request please see **[this](CONTRIBUTING.md)**.
 
-# Other hardening guides
+## Other hardening guides
 
 | <b><u>Type of list</u></b> | <b><u>Comment</u></b> |
 | :---         | :---         |

@@ -181,5 +181,5 @@ Before add pull request please see **[this](CONTRIBUTING.md)**.
 | <b>[Debian GNU/Linux](https://www.debian.org/doc/manuals/securing-debian-howto/index.en.html)</b> | <sup>old guide - to update</sup> |
 | <b>[Fedora Linux](https://docs.fedoraproject.org/en-US/Fedora/19/html/Security_Guide/index.html)</b> | <sup>old guide - to update</sup>  |
 | <b>[Red Hat Enterprise](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/)</b> ||
-| <b>[Slackware Linux](https://docs.slackware.com/howtos:security:start)</b> | <sup>ome data may not be available</sup>  |
+| <b>[Slackware Linux](https://docs.slackware.com/howtos:security:start)</b> | <sup>some data may not be available</sup>  |
 | <b>[Ubuntu Linux](https://help.ubuntu.com/lts/serverguide/security.html.en)</b> | <sup>some data may not be available</sup> |

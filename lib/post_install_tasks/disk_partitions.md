@@ -26,6 +26,12 @@ You should also consider separating these partitions:
 - `/var/tmp`
 - `/var/log/audit`
 
+###### Policies
+
+- STIG:
+
+- CIS:
+
 ###### Useful resources
 
 - [Recommended partitioning scheme](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/installation_guide/s2-diskpartrecommend-x86)
@@ -38,6 +44,12 @@ For more security-focused situations is as follows:
 - `nodev` - specifies that the filesystem cannot contain special devices: This is a security precaution. You don't want a user world-accessible filesystem like this to have the potential for the creation of character devices or access to random device hardware
 - `nosuid` - specifies that the filesystem cannot contain set userid files. Preventing setuid binaries on a world-writable filesystem makes sense because there's a risk of root escalation or other awfulness there
 - `noexec` - this param might be useful for a partition that contains no binaries, like **/var**, or contains binaries you do not want to execute on your system (from partitions with `noexec`), or that cannot even be executed on your system
+
+###### Policies
+
+- STIG:
+
+- CIS:
 
 ###### Useful resources
 
@@ -123,6 +135,12 @@ And set `nodev`, `nosuid` and `noexec` mount options in `/etc/fstab`.
 
   > Alternative for **polyinstantiated directories** is **PrivateTmp** feature available from **systemd**. For more information please see: [New Red Hat Enterprise Linux 7 Security Feature: PrivateTmp](https://access.redhat.com/blogs/766093/posts/1976243).
 
+###### Policies
+
+- STIG:
+
+- CIS:
+
 ###### Useful resources
 
 - [Increasing Linux server security with nodev, nosuid and no exec options](https://kb.iweb.com/hc/en-us/articles/230267488--Increasing-Linux-server-security-with-nodev-nosuid-and-no-exec-options)
@@ -144,6 +162,12 @@ tmpfs  /dev/shm  tmpfs  rw,nodev,nosuid,noexec,size=1024M,mode=1777 0 0
 tmpfs  /dev/shm  tmpfs  rw,nodev,nosuid,noexec,size=1024M,mode=1770,uid=root,gid=shm 0 0
 ```
 
+###### Policies
+
+- STIG:
+
+- CIS:
+
 ###### Useful resources
 
 - [Securing /dev/shm partition](https://www.gnutoolbox.com/securing-devshm-partition/)
@@ -157,6 +181,12 @@ proc  /proc  proc  defaults,hidepid=2  0 0
 ```
 
   > Some of the services/programs operate incorrectly when the `hidepid` parameter is set, e.g. Nagios checks.
+
+###### Policies
+
+- STIG:
+
+- CIS:
 
 ###### Useful resources
 
@@ -190,12 +220,24 @@ cryptdisks_start swap
 swapon -a
 ```
 
+###### Policies
+
+- STIG:
+
+- CIS:
+
 ###### Useful resources
 
 - [dm-crypt/Swap encryption](https://wiki.archlinux.org/index.php/Dm-crypt/Swap_encryption)
 - [Encrypted swap partition on Debian/Ubuntu](https://feeding.cloud.geek.nz/posts/encrypted-swap-partition-on/)
 
 #### :eight_pointed_black_star: Disk quotas
+
+###### Policies
+
+- STIG:
+
+- CIS:
 
 ###### Useful resources
 

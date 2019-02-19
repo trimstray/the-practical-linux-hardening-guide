@@ -54,7 +54,8 @@
   * [Security Content Automation Protocol (SCAP)](#security-content-automation-protocol-scap)
 - **[DevSec Hardening Framework](#devsec-hardening-framework)**
 - **[Contributing](#contributing)**
-- **[Other official hardening guides](#other-official-hardening-guides)**
+- **[External resources](#external-resources)**
+  * **[Other official hardening guides](#other-official-hardening-guides)**
 - **[Pre install tasks](#pre-install-tasks)**
   * **[Physical system security](lib/pre_install_tasks/physical_system_security.md#physical-system-security)**
     + [Introduction](lib/pre_install_tasks/physical_system_security.md#information_source-introduction)
@@ -195,16 +196,17 @@ This guide also provides you with _practical step-by-step instructions_ for buil
 A few simple rules for this project:
 
 - this guide does not exhaust everything about Linux hardening
-- some hardening rules can be done better
+- it contains the different topics related to hardening (e.g. services)
+- some hardening rules/descriptions can be done better
 - you can think of it also as a checklist
 
 Before you start remember:
 
-  > This guide also contains my comments that may be  differ from certain industry principles. If you are not sure what to do please see [Policy Compliance](#policy-compliance) chapter and think about what you actually do at your server.
+  > This guide also contains my comments that may be differ from certain industry principles. If you are not sure what to do please see [Policy Compliance](#policy-compliance) chapter and think about what you actually do at your server.
 
 ### The importance of Linux hardening
 
-Out of the box, Linux servers don’t come "hardened" (e.g. with the attack surface minimized). It’s up to you to prepare for each eventuality and set up systems to notify you of any suspicious activity in the future.
+Simply speaking, hardening is the process of making a system more secure. Out of the box, Linux servers don’t come "hardened" (e.g. with the attack surface minimized). It’s up to you to prepare for each eventuality and set up systems to notify you of any suspicious activity in the future.
 
 You need to harden your system to protect your assets as much as possible. Why it's important? Please read a great and short article that [explains hardening process](https://linux-audit.com/linux-server-hardening-most-important-steps-to-secure-systems/) step by step by [Michael Boelen](https://michaelboelen.com/).
 
@@ -217,6 +219,8 @@ We have a lot of great GNU/Linux hardening policies to provide safer operating s
   > Most of all you should use [Security Benchmarks/Policies](#policy-compliance) which describe consensus best practices for the secure configuration of target systems because configuring your systems in compliance with e.g. CIS has been shown to eliminate 80-95% of known security vulnerabilities.
 
 On the other hand e.g. STIG itself is just a complicated (for newbies difficult to implement) check-list. In my opinion ideally, real world implementation is automated via something like OpenSCAP.
+
+  > You should use a rational approach, remember that more is not better. Each environment is different so security rules should all work in theory, but sometimes it not works as well.
 
 ## Policy Compliance
 
@@ -254,7 +258,9 @@ If you find something which doesn't make sense, or one of these doesn't seem rig
 
 Before add pull request please see **[this](CONTRIBUTING.md)**.
 
-## Other official hardening guides
+## External resources
+
+### Other official hardening guides
 
 | <b><u>Type of hardening guide</u></b> | <b><u>Comments</u></b> |
 | :---         | :---         |

@@ -7,8 +7,6 @@
 Nginx is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server, originally written by [Igor Sysoev](http://sysoev.ru/en/).
 It's used worldwide, and is one of best tools at what it does. Default configuration that comes with it, however, is not very security oriented, and it requires some work to set it up properly. That's what this section aims to help you with.
 
-[Source](https://nginx.org/en/)
-
 #### :eight_pointed_black_star: Files and directories permissions
 
 Usually setting directories permissions to `0755` and file permissions to `0644` is a good practise.
@@ -53,7 +51,7 @@ server {
         server_name example.com;
         server_tokens off;
 
-        ssl     on;
+        ssl on;
         ssl_certificate /etc/nginx/ssl/ssl-bundle.crt;
         ssl_certificate_key /etc/nginx/ssl/cert.key;
         ssl_session_timeout 1d;
@@ -68,13 +66,13 @@ server {
 }
 ```
 
-[Source](https://mozilla.github.io/server-side-tls/ssl-config-generator/)
+###### Useful resources
+
+- [Mozilla SSL Configuration Generator](https://mozilla.github.io/server-side-tls/ssl-config-generator/)
 
 #### :eight_pointed_black_star: Enable HTTP/2
 
 HTTP/2 is a replacement for how HTTP is expressed “on the wire.” It is not a ground-up rewrite of the protocol; HTTP methods, status codes and semantics are the same, and it should be possible to use the same APIs as HTTP/1.x (possibly with some small additions) to represent the protocol.
-
-[Source](https://http2.github.io/)
 
 **Differences between HTTP/2 and HTTP/1.1:**
 
@@ -87,8 +85,6 @@ At a high level, HTTP/2:
   <li>uses header compression to reduce overhead</li>
   <li>allows servers to “push” responses proactively into client caches</li>
 </ul>
-
-[Source](https://http2.github.io/faq/#what-are-the-key-differences-to-http1x)
 
 **Example config that enables HTTP/2:**
 
@@ -114,6 +110,11 @@ server {
         ssl_certificate_key /etc/nginx/ssl/cert.key;
 }
 ```
+
+###### Useful resources
+
+- [HTTP/2](https://http2.github.io/)
+- [What are the key differences to HTTP/1.x?](https://http2.github.io/faq/#what-are-the-key-differences-to-http1x)
 
 #### :eight_pointed_black_star: Separate domains
 
@@ -156,9 +157,7 @@ server {
 
 #### :eight_pointed_black_star: Redirect all unencrypted traffic to HTTPS
 
-This config entry is responsible for permanently redirecting all HTTP traffic to HTTPS. It will redirect all visitors that try to access website through HTTP on port 80, to HTTPS on port 443:
-
-`return 301 https://$host$request_uri;`
+This config entry is responsible for permanently redirecting all HTTP traffic to HTTPS. It will redirect all visitors that try to access website through HTTP on port 80, to HTTPS on port 443: `return 301 https://$host$request_uri;`
 
 **Example config:**
 
@@ -193,8 +192,6 @@ HTTPS (HTTP encrypted with SSL or TLS) is an essential part of the measures to s
 
 When a user enters a web domain manually (providing the domain name without the http:// or https:// prefix) or follows a plain http:// link, the first request to the website is sent unencrypted, using plain HTTP. Most secured websites immediately send back a redirect to upgrade the user to an HTTPS connection, but a well‑placed attacker can mount a man‑in‑the‑middle (MITM) attack to intercept the initial HTTP request and can control the user’s session from then on.
 
-[Source](https://www.nginx.com/blog/http-strict-transport-security-hsts-and-nginx/)
-
 Config entry :
 
 ```bash
@@ -228,6 +225,10 @@ server {
 }
 ```
 
+###### Useful resources
+
+- [HTTP Strict Transport Security (HSTS) and NGINX](https://www.nginx.com/blog/http-strict-transport-security-hsts-and-nginx/)
+
 #### :eight_pointed_black_star: Diffie Hellman Ephemeral Parameter
 
 All versions of nginx as of 1.4.4 rely on OpenSSL for input parameters to Diffie-Hellman (DH). Unfortunately, this means that Ephemeral Diffie-Hellman (DHE) will use OpenSSL's defaults, which include a 1024-bit key for the key-exchange.
@@ -243,7 +244,10 @@ Then add it to your nginx config with this config entry:
 ```bash
 ssl_dhparam /etc/nginx/ssl/dhparam-4096.pem;
 ```
-[Source](https://raymii.org/s/tutorials/Strong_SSL_Security_On_nginx.html)
+
+###### Useful resources
+
+- [Strong SSL Security on Nginx](https://raymii.org/s/tutorials/Strong_SSL_Security_On_nginx.html)
 
 #### :eight_pointed_black_star: Security related headers
 
@@ -279,5 +283,6 @@ When a browser sees this header from an HTTPS website, it “learns” that this
 add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
 ```
 
-[Source 1](https://www.nginx.com/blog/http-strict-transport-security-hsts-and-nginx/)
-[Source 2](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project)
+###### Useful resources
+
+- [OWASP Secure Headers Project](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project)

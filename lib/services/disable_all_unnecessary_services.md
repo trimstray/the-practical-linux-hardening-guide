@@ -20,5 +20,3 @@ Run the following command to disable cups:
 ```bash
 # systemctl disable cups
 ```
-
-[Source](http://www.cups.org)

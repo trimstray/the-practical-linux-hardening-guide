@@ -4,11 +4,16 @@
 
 #### :information_source: Introduction
 
-The primary goal of physical security is to stop physical attacks whenever possible, and, failing that, to slow them down so that hopefully someone will notice the presence of the attacker in a restricted area, preventing any tampering with the system. [Weak physical security often invalidates any other security measure](https://www.lynda.com/Linux-tutorials/Physical-security-concepts/728406/750240-4.html), and thus should be prioritized.
+The primary goal of physical security is to stop physical attacks whenever possible, and, failing that, to slow them down so that hopefully someone will notice the presence of the attacker in a restricted area, preventing any tampering with the system. Weak physical security often invalidates any other security measure, and thus should be prioritized.
 
 #### :eight_pointed_black_star: Secure rooms
 
-For secure rooms make sure that the walls go beyond the false ceiling, and below the raised floor ([source](https://books.google.pt/books?id=XD68NYRPD9oC&pg=PA158&lpg=PA158&dq=physical+security+computer+systems+false+ceiling&source=bl&ots=1wzz6IsBfw&sig=ACfU3U0IPb8NrSiQaQoZFfnu4eMbRgYngQ&hl=en&sa=X&redir_esc=y#v=onepage&q=physical%20security%20computer%20systems%20false%20ceiling&f=false)), large vents should also be [covered with bars](https://books.google.pt/books?id=6yTGIaHLNsAC&pg=PA160&lpg=PA160&dq=covering+vents+with+bars+physical+security&source=bl&ots=2k-196Kwwk&sig=ACfU3U0KsfGhDk06A6qUHIXt88xEi8FZ6w&hl=en&sa=X&redir_esc=y#v=onepage&q=covering%20vents%20with%20bars%20physical%20security&f=false) if possible.
+For secure rooms make sure that the walls go beyond the false ceiling, and below the raised floor, large vents should also be covered with bars if possible.
+
+###### Useful resources
+
+- [Establishing Server Room Security](https://www.getkisi.com/guides/server-room-security)
+- [How to secure your server room](https://www.hpe.com/us/en/insights/articles/how-to-secure-your-server-room-1809.html)
 
 #### :eight_pointed_black_star: Monitoring
 
@@ -16,7 +21,9 @@ Monitoring the room with CCTV or wired cameras is a great way to provide securit
 
 Solution for remotely monitoring the temperature ensue proactively notify you when the temperature goes above or below pre-defined thresholds, potentially allowing you to take corrective measures before encountering costly downtime.
 
-[Source](https://www.enviromon.net/monitoring-physical-security-server-room/)
+###### Useful resources
+
+[Monitoring Physical Security for your Server Room](https://www.enviromon.net/monitoring-physical-security-server-room/)
 
 #### :eight_pointed_black_star: Air conditioning
 
@@ -24,7 +31,9 @@ Computer equipment generates heat, and is sensitive to heat, humidity, and dust,
 
 Air conditioning designs for most computer or server rooms will vary depending on various design considerations, but they are generally one of two types: "up-flow" and "down-flow" configurations.
 
-[Source](https://www.enviromon.net/how-to-monitor-server-room-temperature/)
+###### Useful resources
+
+[How to Monitor Server Room Temperature and Environmental Conditions](https://www.enviromon.net/how-to-monitor-server-room-temperature/)
 
 #### :eight_pointed_black_star: Fire protection
 
@@ -36,19 +45,25 @@ There are a series of things you need in a fire suppression system:
 - gas-based suppression system
 - fire detection sensors
 
-[Source](https://www.controlfiresystems.com/news/what-type-of-suppression-system-works-best-for-computer-room-fires/)
+###### Useful resources
+
+[What Type of Suppression System Works Best for Computer Room Fires?](https://www.controlfiresystems.com/news/what-type-of-suppression-system-works-best-for-computer-room-fires/)
 
 #### :eight_pointed_black_star: Locked racks
 
 All systems should be securely fastened to something with a cable system, or locked in an equipment cage if possible. Case locks should be used when possible to slow attackers down.
 
-[Source](https://securitytoday.com/blogs/reaction/2018/02/Securing-the-Physical-Safety-of-Data-with-Rack-Level-Access-Control.aspx)
+###### Useful resources
+
+[Securing the Physical Safety of Data with Rack-Level Access Control](https://securitytoday.com/blogs/reaction/2018/02/Securing-the-Physical-Safety-of-Data-with-Rack-Level-Access-Control.aspx)
 
 #### :eight_pointed_black_star: Console security
 
 With physical access to most machines you can simply reboot the system and ask it nicely to launch into single user mode, or tell it to use `/bin/sh` for init.
 
-[Source](https://www.tldp.org/HOWTO/Security-HOWTO/physical-security.html)
+###### Useful resources
+
+[Physical Security](https://www.tldp.org/HOWTO/Security-HOWTO/physical-security.html)
 
 #### :eight_pointed_black_star: BIOS protection
 
@@ -70,7 +85,9 @@ Because the methods for setting a BIOS password vary between computer manufactur
 
   > For this reason, it is good practice to lock the computer case if possible. However, consult the manual for the computer or motherboard before attempting to disconnect the CMOS battery.
 
-[Source](https://csrc.nist.gov/csrc/media/publications/sp/800-147b/final/documents/draft-sp800-147b_july2012.pdf)
+###### Useful resources
+
+[BIOS Protection Guidelines for Servers (Draft)](https://csrc.nist.gov/csrc/media/publications/sp/800-147b/final/documents/draft-sp800-147b_july2012.pdf)
 
 #### :ballot_box_with_check: Summary checklist
 

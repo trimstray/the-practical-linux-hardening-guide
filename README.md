@@ -45,6 +45,9 @@
 ## Table of Contents
 
 - **[Introduction](#introduction)**
+  * [General disclaimer](#general-disclaimer)
+  * [The importance of Linux hardening](#the-importance-of-linux-hardening)
+  * [How to hardening GNU/Linux?](#how-to-hardening-gnulinux)
 - **[Policy Compliance](#policy-compliance)**
   * [Center of Internet Security (CIS)](#center-of-internet-security-cis)
   * [Security Technical Implementation Guide (STIG)](#security-technical-implementation-guide-stig)
@@ -177,13 +180,29 @@
 
 ## Introduction
 
-This Hardening Guide provide a high-level overview of the security hardening GNU/Linux systems.
+### General disclaimer
+
+This Hardening Guide provide a high-level overview of the security hardening GNU/Linux systems. It is not an official standard but it _touches_ and _use_ industry standards.
+
+Before you start remember:
+
+  > The Practical Linux Hardening Guide also contains my comments that may be  differ from certain industry standards. If you are not sure what to do please see [Policy Compliance](#policy-compliance).
+
+### The importance of Linux hardening
+
+Out of the box, Linux servers don’t come "hardened" (e.g. with the attack surface minimized). It’s up to you to prepare for each eventuality and set up systems to notify you of any suspicious activity in the future.
+
+### How to hardening GNU/Linux?
+
+In my opinion you should definitely drop all non-industry policies, articles, manuals and other. We have a lot of great GNU/Linux hardening [Policy Compliance](#policy-compliance) to provide safer operating systems compatible with security protocols and security policies.
+
+  > Primarily you should use Security Benchmarks/Policies which describe consensus best practices for the secure configuration of target systems because configuring your systems in compliance with e.g. CIS has been shown to eliminate 80-95% of known security vulnerabilities.
 
 ## Policy Compliance
 
 ### Center of Internet Security (CIS)
 
-The [Center for Internet Security (CIS)](https://www.cisecurity.org/cis-benchmarks/) is a nonprofit organization focused on improving public- and private-sector cybersecurity readiness and response.
+The [Center for Internet Security (CIS)](https://www.cisecurity.org/cis-benchmarks/) is a nonprofit organization focused on improving public and private-sector cybersecurity readiness and response.
 
 ### Security Technical Implementation Guide (STIG)
 

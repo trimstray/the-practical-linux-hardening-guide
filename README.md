@@ -128,12 +128,13 @@
     + [Disable USB usage](#disable-usb-usage)
 - **[Tools](#tools)**
   * **[Logging and Auditing](#logging-and-auditing)**
+    + [Syslog](#syslog)
     + [Auditd](#auditd)
     + [OSSEC](#ossec)
     + [Tiger](#tiger)
     + [Aide](#aide)
     + [Logwatch](#logwatch)
-  * **[SELinux](#selinux)
+  * **[SELinux](#selinux)**
   * **[Other](#other)**
     + [Fail2ban](#fail2ban)
     + [PSAD](#psad)

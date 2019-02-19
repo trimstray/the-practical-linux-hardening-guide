@@ -8,7 +8,7 @@ Disk encryption is focused on securing physical access, while relying on other p
 
 Most of the Linux distributions will allow you to encrypt your disks before installation.
 
-If you use an alternative installation method (e.g. from `debootstrap`) you can create an [encrypted disk manually](#disk-partitions).
+If you use an alternative installation method (e.g. from `debootstrap`) you can create an [encrypted disk manually](lib/post_install_tasks/disk_partitions.md#disk-partitions).
 
 Before this you should to answer the following questions:
 
@@ -26,11 +26,13 @@ Before this you should to answer the following questions:
   * during boot process
   * mixed above or manually
 
-[Source](https://uchicago.service-now.com/it?id=kb_article&kb=KB06000398)
-
 #### :eight_pointed_black_star: Encrypt root filesystem
 
 Unlocked during boot, using passphrases or USB stick with keyfiles.
+
+###### Useful resources
+
+- [dm-crypt/Encrypting an entire system](https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_an_entire_system)
 
 #### :eight_pointed_black_star: Encrypt /boot partition
 
@@ -53,9 +55,7 @@ Before this you should to answer the following questions:
 
 The following recipe should be made after installing the system (however, these steps are included in this section to avoid mixing issues).
 
-[Source](https://security.stackexchange.com/questions/166075/encrypting-the-boot-partition-in-a-linux-system-can-protect-from-an-evil-maid-a)
-
-###### Create copy of your /boot
+##### Create copy of your /boot
 
 ```bash
 mkdir /mnt/boot
@@ -64,14 +64,14 @@ rsync -aAXv /boot/ /mnt/boot/
 umount /mnt/boot
 ```
 
-###### Removed old /boot partition
+##### Removed old /boot partition
 
 ```bash
 umount /boot
 sed -i -e '/\/boot/d' /etc/fstab
 ```
 
-###### Regenerate grub configuration
+##### Regenerate grub configuration
 
 ```bash
 # Debian like distributions
@@ -81,13 +81,13 @@ grub-mkconfig > /boot/grub/grub.cfg
 grub2-mkconfig > /boot/grub2/grub.cfg
 ```
 
-###### Enable `GRUB_ENABLE_CRYPTODISK` param
+##### Enable `GRUB_ENABLE_CRYPTODISK` param
 
 ```bash
 echo GRUB_ENABLE_CRYPTODISK=y >> /etc/default/grub
 ```
 
-###### Reinstall grub
+##### Reinstall grub
 
 ```bash
 # Debian like distributions
@@ -97,13 +97,23 @@ grub-install /dev/sda
 grub2-install /dev/sda
 ```
 
-  > More details can be found here (Bootloader configuration (grub) section):
-  > - [Lock the boot directory](#eight_pointed_black_star-lock-the-boot-directory)
+  > More details can be found here [Bootloader configuration (grub) section](lib/post_install_tasks/bootloader_configuration.md#bootloader-configuration-grub)
+
+###### Useful resources
+
+- [Encrypting More: /boot Joins The Party](https://dustymabe.com/2015/07/06/encrypting-more-boot-joins-the-party/)
+- [Encrypting the /boot partition in a Linux system can protect from an Evil Maid Attack?](https://security.stackexchange.com/questions/166075/encrypting-the-boot-partition-in-a-linux-system-can-protect-from-an-evil-maid-a)
 
 #### :eight_pointed_black_star: Swap partition
 
 - swap area is not required to survive a reboot, therefore a new random encryption key can be chosen each time the swap area is activated
 - get the key from `/dev/urandom` because `/dev/random` maybe stalling your boot sequence
+
+  > More details can be found here [Swap partition](lib/post_install_tasks/disk_partitions.md#eight_pointed_black_star-swap-partition)
+
+###### Useful resources
+
+- [An introduction to swap space on Linux systems](https://opensource.com/article/18/9/swap-space-linux-systems)
 
 #### :ballot_box_with_check: Summary checklist
 

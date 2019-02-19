@@ -173,7 +173,7 @@ Before add pull request please see **[this](CONTRIBUTING.md)**.
 
 ## Other hardening guides
 
-| <b><u>Distribution</u></b> | <b><u>Comment</u></b> |
+| <b><u>Type of list</u></b> | <b><u>Comment</u></b> |
 | :---         | :---         |
 | <b>[STIGs Master List](https://iase.disa.mil/stigs/Pages/a-z.aspx)</b> ||
 | <b>[Arch Linux](https://wiki.archlinux.org/index.php/Security)</b> ||

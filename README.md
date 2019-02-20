@@ -48,6 +48,8 @@
   * [General disclaimer](#general-disclaimer)
   * [The importance of Linux hardening](#the-importance-of-linux-hardening)
   * [How to hardening Linux?](#how-to-hardening-linux)
+  * [How to read this guide?](#how-to-read-this-guide)
+  * [Ok. Let's start, 3, 2, 1... STOP!](#ok-let-s-start-3-2-1-stop)
 - **[Policy Compliance](#policy-compliance)**
   * [Center of Internet Security (CIS)](#center-of-internet-security-cis)
   * [Security Technical Implementation Guide (STIG)](#security-technical-implementation-guide-stig)
@@ -196,7 +198,7 @@ This guide also provides you with _practical step-by-step instructions_ for buil
 A few simple rules for this project:
 
 - this guide does not exhaust everything about Linux hardening
-- it contains the different topics related to hardening (e.g. services)
+- it contains the different topics related to hardening (e.g. services, physical security)
 - some hardening rules/descriptions can be done better
 - you can think of it also as a checklist
 
@@ -221,6 +223,30 @@ We have a lot of great GNU/Linux hardening policies to provide safer operating s
 On the other hand e.g. STIG itself is just a complicated (for newbies difficult to implement) check-list. In my opinion ideally, real world implementation is automated via something like OpenSCAP.
 
   > You should use a rational approach, remember that more is not better. Each environment is different so security rules should all work in theory, but sometimes it not works as well.
+
+### How to read this guide?
+
+The three levels of understanding this guide:
+
+- read the main chapter (introduction and other sub chapters), e.g. _Linux kernel hardening_, it offers a general overview
+- check the _Useful resources_ for a deeper understanding
+- check the _Policies_ and on this basis, make changes
+
+### Ok. Let's start, 3, 2, 1... STOP!
+
+Making major changes to the direction of your systems can be risky.
+
+The basic rule of system hardening that reasonable admins actually use is:
+
+  > **A production environment is the real instance of the application so all your changes make on the dev/test before production!**
+
+The second important rule is:
+
+  > **Don’t do anything that will affect the availability of the service or your system.**
+
+The third rule is:
+
+  > **Make backup of entire virtual machines and important components in the middle of them.**
 
 ## Policy Compliance
 

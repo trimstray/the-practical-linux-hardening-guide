@@ -93,6 +93,9 @@
     + [Disk quotas](lib/post_install_tasks/disk_partitions.md#eight_pointed_black_star-disk-quotas)
     + [Summary checklist](lib/post_install_tasks/disk_partitions.md#ballot_box_with_check-summary-checklist)
   * **[Keep system updated](#keep-system-updated)**
+    + [Introduction](lib/post_install_tasks/keep_system_updated.md#information_source-introduction)
+    + [Make sure that the system is up to date](lib/post_install_tasks/keep_system_updated.md#eight_pointed_black_star-make-sure-that-the-system-is-up-to-date)
+    + [Summary checklist](lib/post_install_tasks/keep_system_updated.md#ballot_box_with_check-summary-checklist)
   * **[Package management](#package-management)**
     + [Automatic security updates](#automatic-security-updates)
     + [Remove packages with known issues](#remove-packages-with-known-issues)

@@ -50,7 +50,7 @@
   * [How to hardening Linux?](#how-to-hardening-linux)
   * [How to read this guide?](#how-to-read-this-guide)
   * [Which distribution should be used?](#which-distribution-should-be-used)
-  * [Ok. Let's start, 3, 2, 1... STOP!](#ok-let-s-start-3-2-1-stop)
+  * [Okay. Let's start, 3, 2, 1... STOP!](#okay-let-s-start-3-2-1-stop)
 - **[Policy Compliance](#policy-compliance)**
   * [Center of Internet Security (CIS)](#center-of-internet-security-cis)
   * [Security Technical Implementation Guide (STIG)](#security-technical-implementation-guide-stig)
@@ -218,7 +218,7 @@ A few simple rules for this project:
 
 Before you start remember:
 
-  > This guide also contains my comments that may be differ from certain industry principles. If you are not sure what to do please see [Policy Compliance](#policy-compliance) chapter and think about what you actually do at your server.
+  > This guide also contains my comments that may be differ from certain industry principles. If you are not sure what to do please see **[Policy Compliance](#policy-compliance)** chapter and think about what you actually do at your server.
 
 ### The importance of Linux hardening
 
@@ -258,9 +258,9 @@ This guide is being written and tested on **Red Hat Enterprise Linux** and **Cen
 - they have great community support
 - they are built on coherent snapshots of old packages
 
-In the case of hardening they provide a **[certified tools](#scap-security-guide)** which can parse and evaluate each component of the SCAP standard.
+In the case of hardening they provide **[certified tools](#scap-security-guide)** which can parse and evaluate each component of the SCAP standard.
 
-### Ok. Let's start, 3, 2, 1... STOP!
+### Okay. Let's start, 3, 2, 1... STOP!
 
 Making major changes to the direction of your systems can be risky.
 
@@ -365,7 +365,7 @@ This project covered a lot of the things in this guide, which can be automated (
 
 Project: **[DevSec Hardening Framework](https://dev-sec.io)** + GH repository: **[dev-sec](https://github.com/dev-sec/)**.
 
-Thanks for **[@artem-sidorenko](https://github.com/artem-sidorenko)**!
+Thanks for [@artem-sidorenko](https://github.com/artem-sidorenko)!
 
 ## Summary
 

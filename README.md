@@ -49,13 +49,17 @@
   * [The importance of Linux hardening](#the-importance-of-linux-hardening)
   * [How to hardening Linux?](#how-to-hardening-linux)
   * [How to read this guide?](#how-to-read-this-guide)
+  * [Which distribution should be used?](#which-distribution-should-be-used)
   * [Ok. Let's start, 3, 2, 1... STOP!](#ok-let-s-start-3-2-1-stop)
 - **[Policy Compliance](#policy-compliance)**
   * [Center of Internet Security (CIS)](#center-of-internet-security-cis)
   * [Security Technical Implementation Guide (STIG)](#security-technical-implementation-guide-stig)
   * [National Institute of Standards and Technology (NIST)](#national-institute-of-standards-and-technology-nist)
+  * [Payment Card Industry Data Security Standard (PCI-DSS)](#payment-card-industry-data-security-standard-pci-dss)
 - **[Security Content Automation Protocol (SCAP)](#security-content-automation-protocol-scap)**
   * [SCAP Security Guide](#scap-security-guide)
+  * [OpenSCAP Base](#openscap-base)
+  * [SCAP Workbench](#scap-workbench)
 - **[DevSec Hardening Framework](#devsec-hardening-framework)**
 - **[Contributing](#contributing)**
 - **[External resources](#external-resources)**
@@ -254,7 +258,7 @@ This guide is being written and tested on **Red Hat Enterprise Linux** and **Cen
 - they have great community support
 - they are built on coherent snapshots of old packages
 
-In the case of hardening they provide a **[certified tool](#oscap-tool)** which can parse and evaluate each component of the SCAP standard.
+In the case of hardening they provide a **[certified tools](#scap-security-guide)** which can parse and evaluate each component of the SCAP standard.
 
 ### Ok. Let's start, 3, 2, 1... STOP!
 

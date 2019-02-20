@@ -61,9 +61,9 @@
   * [OpenSCAP Base](#openscap-base)
   * [SCAP Workbench](#scap-workbench)
 - **[DevSec Hardening Framework](#devsec-hardening-framework)**
-- **[Contributing](#contributing)**
+- **[Contributing & Support](#contributing-support)**
 - **[External resources](#external-resources)**
-  * [Other official hardening guides](#other-official-hardening-guides)
+  * [Other official hardening guides](lib/pre_install_tasks/other_official_hardening_guides.md#other-official-hardening-guides)
 - **[Pre install tasks](#pre-install-tasks)**
   * **[Physical system security](lib/pre_install_tasks/physical_system_security.md#physical-system-security)**
     + [Introduction](lib/pre_install_tasks/physical_system_security.md#information_source-introduction)
@@ -373,23 +373,10 @@ Project: **[DevSec Hardening Framework](https://dev-sec.io)** + GH repository: *
 
 Thanks for [@artem-sidorenko](https://github.com/artem-sidorenko)!
 
-## Contributing
+## Contributing & Support
 
 If you find something which doesn't make sense, or one of these doesn't seem right, or something seems really stupid; please make a pull request or please add valid and well-reasoned opinions about your changes or comments.
 
 Before add pull request please see **[this](CONTRIBUTING.md)**.
 
-## External resources
-
-### Other official hardening guides
-
-| <b><u>Type of hardening guide</u></b> | <b><u>Comments</u></b> |
-| :---         | :---         |
-| <b>[STIGs Master List](https://iase.disa.mil/stigs/Pages/a-z.aspx)</b> ||
-| <b>[Arch Linux](https://wiki.archlinux.org/index.php/Security)</b> ||
-| <b>[CentOS Linux](https://wiki.centos.org/HowTos/OS_Protection)</b> ||
-| <b>[Debian GNU/Linux](https://www.debian.org/doc/manuals/securing-debian-howto/index.en.html)</b> | <sup>old guide - to update</sup> |
-| <b>[Fedora Linux](https://docs.fedoraproject.org/en-US/Fedora/19/html/Security_Guide/index.html)</b> | <sup>old guide - to update</sup>  |
-| <b>[Red Hat Enterprise](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/)</b> ||
-| <b>[Slackware Linux](https://docs.slackware.com/howtos:security:start)</b> | <sup>some data may not be available</sup>  |
-| <b>[Ubuntu Linux](https://help.ubuntu.com/lts/serverguide/security.html.en)</b> | <sup>some data may not be available</sup> |
+If this project is useful and important for you or if you really like _The Practical Linux Hardening Guide_, you can bring me **more positive energy**, give me some **good words** or **support this project** more. Thank you!

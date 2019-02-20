@@ -222,9 +222,11 @@ Simply speaking, hardening is the process of making a system more secure. Out of
 
 You need to harden your system to protect your assets as much as possible. Why it's important? Please read a great and short article that [explains hardening process](https://linux-audit.com/linux-server-hardening-most-important-steps-to-secure-systems/) step by step by [Michael Boelen](https://michaelboelen.com/).
 
+The process of hardening servers involves both IT ops. and security teams and require changes to the default configuration according to industry benchmarks.
+
 ### How to hardening Linux?
 
-In my opinion you should definitely drop all non-industry policies, articles, manuals and other (especially on your production environments but also if you harden standalone home server). This stuff exist to give false sense of security.
+In my opinion you should definitely drop all non-industry policies, articles, manuals and other (especially on your production environments but also if you harden standalone home server). This lists exist to give false sense of security and they are not bases on authority standards.
 
 We have a lot of great GNU/Linux hardening policies to provide safer operating systems compatible with security protocols. For me, **CIS** and the various **NSA STIGs** are about the best actual prescriptive guides.
 
@@ -241,6 +243,18 @@ The three levels of understanding this guide:
 - read the main chapter (introduction and other sub chapters), e.g. _Linux kernel hardening_, it offers a general overview
 - check the _Useful resources_ for a deeper understanding
 - check the _Policies_ and on this basis, make changes
+
+### Which distribution should be used?
+
+This guide is being written and tested on **Red Hat Enterprise Linux** and **CentOS Linux** distributions because:
+
+- they are a free (CentOS) and open source
+- they are enterprise-class
+- they are stable and reliable
+- they have great community support
+- they are built on coherent snapshots of old packages
+
+In the case of hardening they provide a **[certified tool](#oscap-tool)** which can parse and evaluate each component of the SCAP standard.
 
 ### Ok. Let's start, 3, 2, 1... STOP!
 
@@ -278,6 +292,17 @@ A National Institute of Standards and Technology (NIST) is a physical sciences l
 
 Please see **[National Checklist Program (NCP)](https://nvd.nist.gov/ncp/repository)**.
 
+### Payment Card Industry Data Security Standard (PCI-DSS)
+
+Payment Card Industry Data Security Standard (PCI DSS) compliance is a requirement for any business that stores, processes, or transmits cardholder data.
+
+In accordance with PCI DSS requirements established a formal policy and supporting procedures for developing configuration standards for system components that are consistent with industry-accepted hardening standards like:
+
+- Center for Internet Security (CIS)
+- International Organization for Standardization (ISO)
+- SysAdmin, Audit, Network, and Security (SANS) Institute
+- National Institute of Standards and Technology (NIST)
+
 ## Security Content Automation Protocol (SCAP)
 
 Security Content Automation Protocol (SCAP) provides a mechanism to check configurations, vulnerability management and evaluate policy compliance for a variety of systems.
@@ -294,6 +319,33 @@ You should inspect the security content of your system with `oscap info` module:
 
 ```bash
 oscap info /usr/share/xml/scap/ssg/rhel7/ssg-rhel7-ds.xml
+```
+
+### OpenSCAP Base
+
+The `oscap` tool scans your system, validate security compliance content and generate reports and guides based on these scans.
+
+Official [OpenSCAP Base](https://www.open-scap.org/tools/openscap-base/) documentation say:
+
+  > _The command-line tool, called `oscap`, offers a multi-purpose tool designed to format content into documents or scan the system based on this content. Whether you want to evaluate DISA STIGs, NIST‘s USGCB, or Red Hat’s Security Response Team’s content, all are supported by OpenSCAP._
+
+How it use?
+
+```bash
+# Installation:
+yum install openscap-scanner
+
+# Make a RHEL7/CentOS machine PCI-DSS compliant:
+oscap xccdf eval --report report.html --profile xccdf_org.ssgproject.content_profile_pci-dss /usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml
+```
+
+### SCAP Workbench
+
+SCAP Workbench is a utility that offers an easy way to perform common `oscap` tasks on local or remote systems.
+
+```bash
+# Installation:
+yum install scap-security-guide scap-workbench
 ```
 
 ## DevSec Hardening Framework

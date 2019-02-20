@@ -339,8 +339,11 @@ Before use please see [Using OSCAP](https://access.redhat.com/documentation/en-u
 # Installation:
 yum install openscap-scanner
 
-# Make a RHEL7/CentOS machine PCI-DSS compliant:
+# Make a RHEL7 machine PCI-DSS compliant:
 oscap xccdf eval --report report.html --profile xccdf_org.ssgproject.content_profile_pci-dss /usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml
+
+# Make a CentOS machine PCI-DSS compliant:
+oscap xccdf eval --report report.html --profile xccdf_org.ssgproject.content_profile_pci-dss /usr/share/xml/scap/ssg/content/ssg-centos7-ds.xml
 ```
 
 ### SCAP Workbench

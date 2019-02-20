@@ -211,14 +211,16 @@ This guide also provides you with _practical step-by-step instructions_ for buil
 
 A few simple rules for this project:
 
-- this guide does not exhaust everything about Linux hardening
-- it contains the different topics related to hardening (e.g. services, physical security)
+- this guide is compliance with [OpenSCAP](https://www.open-scap.org/) (PCI-DSS)
+- is based on a minimal [RHEL](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) and [CentOS](https://www.centos.org/) installations
+- it does not exhaust everything about Linux hardening
+- it also contains non-related rules with PCI-DSS
 - some hardening rules/descriptions can be done better
 - you can think of it also as a checklist
 
 Before you start remember:
 
-  > This guide also contains my comments that may be differ from certain industry principles. If you are not sure what to do please see **[Policy Compliance](#policy-compliance)** chapter and think about what you actually do at your server.
+  > This guide also contains my comments that may be differ from certain industry principles. If you are not sure what to do please see **[Policy Compliance](#policy-compliance)** chapter.
 
 ### The importance of Linux hardening
 
@@ -240,14 +242,6 @@ On the other hand e.g. STIG itself is just a complicated (for newbies difficult 
 
   > You should use a rational approach, remember that more is not better. Each environment is different so security rules should all work in theory, but sometimes it not works as well.
 
-### How to read this guide?
-
-The three levels of understanding this guide:
-
-- read the main chapter (introduction and other sub chapters), e.g. _Linux kernel hardening_, it offers a general overview
-- check the _Useful resources_ for a deeper understanding
-- check the _Policies_ and on this basis, make changes
-
 ### Which distribution should be used?
 
 This guide is being written and tested on **Red Hat Enterprise Linux** and **CentOS Linux** distributions because:
@@ -258,7 +252,15 @@ This guide is being written and tested on **Red Hat Enterprise Linux** and **Cen
 - they have great community support
 - they are built on coherent snapshots of old packages
 
-In the case of hardening they provide **[certified tools](#scap-security-guide)** which can parse and evaluate each component of the SCAP standard.
+Both distributions provides **[certified tools](#scap-security-guide)** which can parse and evaluate each component of the SCAP standard.
+
+### How to read this guide?
+
+The three levels of understanding:
+
+- read the _main chapters_ (introduction and other sub chapters), e.g. _Linux kernel hardening_, it offers a general overview
+- check the _useful resources_ for a deeper understanding
+- check the _policies_ and on this basis, make changes
 
 ### Okay. Let's start, 3, 2, 1... STOP!
 
@@ -272,15 +274,19 @@ The second important rule is:
 
   > **`Don’t do anything that will affect the availability of the service or your system.`**
 
-And the third rule is:
+The third rule is:
 
   > **`Make backup of entire virtual machines and important components in the middle of them.`**
+
+And the last rule is:
+
+  > **`Think about what you actually do at your server.`**
 
 ## Policy Compliance
 
 ### Center of Internet Security (CIS)
 
-The Center for Internet Security (CIS) is a nonprofit organization focused on improving public and private-sector cybersecurity readiness and response.
+The Center of Internet Security (CIS) is a nonprofit organization focused on improving public and private-sector cybersecurity readiness and response.
 
 Please see **[CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks/)**.
 
@@ -302,7 +308,7 @@ Payment Card Industry Data Security Standard (PCI-DSS) compliance is a requireme
 
 In accordance with PCI-DSS requirements established a formal policy and supporting procedures for developing configuration standards for system components that are consistent with industry-accepted hardening standards like:
 
-- Center for Internet Security (CIS)
+- Center of Internet Security (CIS)
 - International Organization for Standardization (ISO)
 - SysAdmin, Audit, Network, and Security (SANS) Institute
 - National Institute of Standards and Technology (NIST)
@@ -333,7 +339,7 @@ Official [OpenSCAP Base](https://www.open-scap.org/tools/openscap-base/) documen
 
   > _The command-line tool, called `oscap`, offers a multi-purpose tool designed to format content into documents or scan the system based on this content. Whether you want to evaluate DISA STIGs, NIST‘s USGCB, or Red Hat’s Security Response Team’s content, all are supported by OpenSCAP._
 
-Before use please see [Using OSCAP](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sect-using_oscap).
+Before use please see **[Using OSCAP](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sect-using_oscap)**.
 
 ```bash
 # Installation:
@@ -350,7 +356,7 @@ oscap xccdf eval --report report.html --profile xccdf_org.ssgproject.content_pro
 
 SCAP Workbench is a utility that offers an easy way to perform common `oscap` tasks on local or remote systems.
 
-Before use please see [Using SCAP Workbench](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sect-using_scap_workbench).
+Before use please see **[Using SCAP Workbench](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sect-using_scap_workbench)**.
 
 ```bash
 # Installation:
@@ -361,15 +367,11 @@ yum install scap-security-guide scap-workbench
 
   > _Security + DevOps: Automatic Server Hardening._
 
-This project covered a lot of the things in this guide, which can be automated (e.g. setting of grub password or enforcing the permissions of the common directories).
+This project covered some of the things in this guide, which can be automated (e.g. setting of grub password or enforcing the permissions of the common directories). It's a good start if you want to make some changes and see how it works from the level of automation tools.
 
 Project: **[DevSec Hardening Framework](https://dev-sec.io)** + GH repository: **[dev-sec](https://github.com/dev-sec/)**.
 
 Thanks for [@artem-sidorenko](https://github.com/artem-sidorenko)!
-
-## Summary
-
-Okay, let's put together what we were talking about:
 
 ## Contributing
 

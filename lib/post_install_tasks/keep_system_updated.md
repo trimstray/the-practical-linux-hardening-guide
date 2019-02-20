@@ -34,6 +34,8 @@ apt-get update -qq ; apt-get upgrade -duyq
 apt-get upgrade && apt-get dist-upgrade
 ```
 
+#### :eight_pointed_black_star: Automatic security updates
+
 ###### Useful resources
 
 - [How Often Should I Update our Linux Server?](https://serverfault.com/questions/9490/how-often-should-i-update-our-linux-server)

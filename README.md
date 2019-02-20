@@ -98,6 +98,7 @@
     + [Introduction](lib/post_install_tasks/keep_system_updated.md#information_source-introduction)
     + [Make sure that the system is up to date](lib/post_install_tasks/keep_system_updated.md#eight_pointed_black_star-make-sure-that-the-system-is-up-to-date)
     + [Automatic security updates](lib/post_install_tasks/keep_system_updated.md#eight_pointed_black_star-automatic-security-updates)
+    + [Useful resources](lib/post_install_tasks/keep_system_updated.md#link-useful-resource)
     + [Summary checklist](lib/post_install_tasks/keep_system_updated.md#ballot_box_with_check-summary-checklist)
   * **[Package management](#package-management)**
     + [Remove packages with known issues](#remove-packages-with-known-issues)
@@ -279,7 +280,7 @@ Security Content Automation Protocol (SCAP) provides a mechanism to check config
 
 One of the most popular implementations of SCAP is OpenSCAP and it is very helpful for vulnerability assessment and also as hardening helper.
 
-Please see **[SCAP Security Policies](https://www.open-scap.org/security-policies/)** and **[OpenSCAP User Manual](https://static.open-scap.org/openscap-1.2/oscap_user_manual.html)**.
+Please see **[SCAP Security Policies](https://www.open-scap.org/security-policies/)**, **[OpenSCAP User Manual](https://static.open-scap.org/openscap-1.2/oscap_user_manual.html)** and **[OpenSCAP Static](https://static.open-scap.org/)**.
 
 ### SCAP Security Guide
 

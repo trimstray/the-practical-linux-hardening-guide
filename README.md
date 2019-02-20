@@ -48,8 +48,8 @@
   * [General disclaimer](#general-disclaimer)
   * [The importance of Linux hardening](#the-importance-of-linux-hardening)
   * [How to hardening Linux?](#how-to-hardening-linux)
-  * [How to read this guide?](#how-to-read-this-guide)
   * [Which distribution should be used?](#which-distribution-should-be-used)
+  * [How to read this guide?](#how-to-read-this-guide)
   * [Okay. Let's start, 3, 2, 1... STOP!](#okay-let-s-start-3-2-1-stop)
 - **[Policy Compliance](#policy-compliance)**
   * [Center of Internet Security (CIS)](#center-of-internet-security-cis)
@@ -339,7 +339,7 @@ Official [OpenSCAP Base](https://www.open-scap.org/tools/openscap-base/) documen
 
   > _The command-line tool, called `oscap`, offers a multi-purpose tool designed to format content into documents or scan the system based on this content. Whether you want to evaluate DISA STIGs, NIST‘s USGCB, or Red Hat’s Security Response Team’s content, all are supported by OpenSCAP._
 
-Before use please see **[Using OSCAP](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sect-using_oscap)**.
+Before use please see **[Using OSCAP](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sect-using_oscap)** documentation.
 
 ```bash
 # Installation:
@@ -356,7 +356,7 @@ oscap xccdf eval --report report.html --profile xccdf_org.ssgproject.content_pro
 
 SCAP Workbench is a utility that offers an easy way to perform common `oscap` tasks on local or remote systems.
 
-Before use please see **[Using SCAP Workbench](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sect-using_scap_workbench)**.
+Before use please see **[Using SCAP Workbench](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sect-using_scap_workbench)** documentation.
 
 ```bash
 # Installation:

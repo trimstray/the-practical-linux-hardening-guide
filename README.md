@@ -230,9 +230,9 @@ The process of hardening servers involves both IT ops. and security teams and re
 
 ### How to hardening Linux?
 
-In my opinion you should definitely drop all non-industry policies, articles, manuals and other (especially on your production environments but also if you harden standalone home server). This lists exist to give false sense of security and they are not bases on authority standards.
+In my opinion you should definitely drop all non-industry policies, articles, manuals and other (especially on your production environments but also if you harden standalone home server). These lists exist to give false sense of security and they are not bases on authority standards.
 
-We have a lot of great GNU/Linux hardening policies to provide safer operating systems compatible with security protocols. For me, **CIS** and the various **NSA STIGs** are about the best actual prescriptive guides.
+We have a lot of great GNU/Linux hardening policies to provide safer operating systems compatible with security protocols. For me, **CIS** and the **PCI-DSS** compliant are about the best actual prescriptive guides.
 
   > Most of all you should use [Security Benchmarks/Policies](#policy-compliance) which describe consensus best practices for the secure configuration of target systems because configuring your systems in compliance with e.g. CIS has been shown to eliminate 80-95% of known security vulnerabilities.
 
@@ -298,9 +298,9 @@ Please see **[National Checklist Program (NCP)](https://nvd.nist.gov/ncp/reposit
 
 ### Payment Card Industry Data Security Standard (PCI-DSS)
 
-Payment Card Industry Data Security Standard (PCI DSS) compliance is a requirement for any business that stores, processes, or transmits cardholder data.
+Payment Card Industry Data Security Standard (PCI-DSS) compliance is a requirement for any business that stores, processes, or transmits cardholder data.
 
-In accordance with PCI DSS requirements established a formal policy and supporting procedures for developing configuration standards for system components that are consistent with industry-accepted hardening standards like:
+In accordance with PCI-DSS requirements established a formal policy and supporting procedures for developing configuration standards for system components that are consistent with industry-accepted hardening standards like:
 
 - Center for Internet Security (CIS)
 - International Organization for Standardization (ISO)
@@ -366,6 +366,10 @@ This project covered a lot of the things in this guide, which can be automated (
 Project: **[DevSec Hardening Framework](https://dev-sec.io)** + GH repository: **[dev-sec](https://github.com/dev-sec/)**.
 
 Thanks for **[@artem-sidorenko](https://github.com/artem-sidorenko)**!
+
+## Summary
+
+Okay, let's put together what we were talking about:
 
 ## Contributing
 

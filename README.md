@@ -101,7 +101,11 @@
     + [Useful resources](lib/post_install_tasks/keep_system_updated.md#link-useful-resource)
     + [Summary checklist](lib/post_install_tasks/keep_system_updated.md#ballot_box_with_check-summary-checklist)
   * **[Package management](#package-management)**
-    + [Remove packages with known issues](#remove-packages-with-known-issues)
+    + [Introduction](lib/post_install_tasks/package_management.md#information_source-introduction)
+    + [Check package signatures](lib/post_install_tasks/package_management.md#information_source-introduction)
+    + [Remove packages with known issues](lib/post_install_tasks/package_management.md#remove-packages-with-known-issues)
+    + [Useful resources](lib/post_install_tasks/package_management.md#link-useful-resource)
+    + [Summary checklist](lib/post_install_tasks/package_management.md#ballot_box_with_check-summary-checklist)
   * **[Netfilter ruleset](#netfilter-ruleset)**
     + [Shorewall](#shorewall)
   * **[TCP wrapper](#tcp-wrapper)**

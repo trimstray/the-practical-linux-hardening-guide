@@ -10,7 +10,7 @@ Some benefits:
 
 - close up problems of security that has been discovered
 - it can improve the stability of the system
-- improvements the system stacks, e.g. network stack
+- improvements the system stacks or network stacks
 
 #### :eight_pointed_black_star: Make sure that the system is up to date
 

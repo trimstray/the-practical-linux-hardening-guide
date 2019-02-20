@@ -211,7 +211,7 @@ This guide also provides you with _practical step-by-step instructions_ for buil
 
 A few simple rules for this project:
 
-- this guide is compliance with [OpenSCAP](https://www.open-scap.org/) (PCI-DSS)
+- this guide is compliant with [OpenSCAP](https://www.open-scap.org/) (PCI-DSS)
 - is based on a minimal [RHEL](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) and [CentOS](https://www.centos.org/) installations
 - it does not exhaust everything about Linux hardening
 - it also contains non-related rules with PCI-DSS

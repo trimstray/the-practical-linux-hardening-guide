@@ -53,7 +53,9 @@
 - **[Policy Compliance](#policy-compliance)**
   * [Center of Internet Security (CIS)](#center-of-internet-security-cis)
   * [Security Technical Implementation Guide (STIG)](#security-technical-implementation-guide-stig)
-  * [Security Content Automation Protocol (SCAP)](#security-content-automation-protocol-scap)
+  * [National Institute of Standards and Technology (NIST)](#national-institute-of-standards-and-technology-nist)
+- **[Security Content Automation Protocol (SCAP)](#security-content-automation-protocol-scap)**
+  * [SCAP Security Guide](#scap-security-guide)
 - **[DevSec Hardening Framework](#devsec-hardening-framework)**
 - **[Contributing](#contributing)**
 - **[External resources](#external-resources)**
@@ -265,11 +267,29 @@ A Security Technical Implementation Guide (STIG) is a cybersecurity methodology 
 
 Please see **[Stigviewer](https://www.stigviewer.com/stigs)** for explore all stigs.
 
-### Security Content Automation Protocol (SCAP)
+### National Institute of Standards and Technology (NIST)
+
+A National Institute of Standards and Technology (NIST) is a physical sciences laboratory, and a non-regulatory agency of the United States Department of Commerce.
+
+Please see **[National Checklist Program (NCP)](https://nvd.nist.gov/ncp/repository)**.
+
+## Security Content Automation Protocol (SCAP)
 
 Security Content Automation Protocol (SCAP) provides a mechanism to check configurations, vulnerability management and evaluate policy compliance for a variety of systems.
 
-One of the most popular implementations of SCAP is **[OpenSCAP](https://www.open-scap.org/security-policies/)** and it is very helpful for vulnerability assessment and also as hardening helper.
+One of the most popular implementations of SCAP is OpenSCAP and it is very helpful for vulnerability assessment and also as hardening helper.
+
+Please see **[SCAP Security Policies](https://www.open-scap.org/security-policies/)** and **[OpenSCAP User Manual](https://static.open-scap.org/openscap-1.2/oscap_user_manual.html)**.
+
+### SCAP Security Guide
+
+The auditing system settings with SCAP Security Guide project contains guidance for settings of Red Hat Enterprise Linux 7/CentOS Linux and it's validated by NIST.
+
+You should inspect the security content of your system with `oscap info` module:
+
+```bash
+oscap info /usr/share/xml/scap/ssg/rhel7/ssg-rhel7-ds.xml
+```
 
 ## DevSec Hardening Framework
 

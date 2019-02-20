@@ -41,10 +41,11 @@ apt-get upgrade && apt-get dist-upgrade
 ###### Policies
 
 | <b><u>Policy</u></b> | <b><u>ID/Description</u></b> | <b><u>Severity</u></b> |
-| :---         | :---         | |
-| <b>STIG</b> | [V-71999](https://www.stigviewer.com/stig/red_hat_enterprise_linux_7/2017-12-14/finding/V-71999) | Severity: <b>Medium</b> |
+| :---         | :---         | :--- |
+| <b>STIG</b> | [V-71999](https://www.stigviewer.com/stig/red_hat_enterprise_linux_7/2017-12-14/finding/V-71999) | <b>Medium</b> |
 | <b>CIS</b> | 1.2, 1.8 | |
 | <b>OpenSCAP</b> | CCI-002605, CCI-002607 | CAT II |
+
 
 #### :ballot_box_with_check: Summary checklist
 

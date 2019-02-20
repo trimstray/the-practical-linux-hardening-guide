@@ -238,15 +238,15 @@ Making major changes to the direction of your systems can be risky.
 
 The basic rule of system hardening that reasonable admins actually use is:
 
-  > **A production environment is the real instance of the application so all your changes make on the dev/test before production!**
+  > **`A production environment is the real instance of the application so all your changes make on the dev/test before production!`**
 
 The second important rule is:
 
-  > **Don’t do anything that will affect the availability of the service or your system.**
+  > **`Don’t do anything that will affect the availability of the service or your system.`**
 
 The third rule is:
 
-  > **Make backup of entire virtual machines and important components in the middle of them.**
+  > **`Make backup of entire virtual machines and important components in the middle of them.`**
 
 ## Policy Compliance
 

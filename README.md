@@ -62,6 +62,7 @@
   * [SCAP Workbench](#scap-workbench)
 - **[DevSec Hardening Framework](#devsec-hardening-framework)**
 - **[Contributing & Support](#contributing--support)**
+- **[License](#license)**
 - **[External resources](#external-resources)**
   * [Other official hardening guides](lib/external_resources/other_official_hardening_guides.md#other-official-hardening-guides)
 - **[Pre install tasks](#pre-install-tasks)**
@@ -205,7 +206,7 @@
 
 ### General disclaimer
 
-**The Practical Linux Hardening Guide** provides a high-level overview of the security hardening GNU/Linux systems. It is not an official standard or handbook but it _touches_ and _use_ industry standards.
+**The Practical Linux Hardening Guide** provides a high-level overview of the hardening GNU/Linux systems. It is not an official standard or handbook but it _touches_ and _use_ industry standards.
 
 This guide also provides you with _practical step-by-step instructions_ for building your own hardened systems and services.
 
@@ -226,9 +227,9 @@ Before you start remember:
 
 Simply speaking, hardening is the process of making a system more secure. Out of the box, Linux servers don’t come "hardened" (e.g. with the attack surface minimized). It’s up to you to prepare for each eventuality and set up systems to notify you of any suspicious activity in the future.
 
-You need to harden your system to protect your assets as much as possible. Why it's important? Please read a great and short article that [explains hardening process](https://linux-audit.com/linux-server-hardening-most-important-steps-to-secure-systems/) step by step by [Michael Boelen](https://michaelboelen.com/).
-
 The process of hardening servers involves both IT ops. and security teams and require changes to the default configuration according to industry benchmarks.
+
+You need to harden your system to protect your assets as much as possible. Why it's important? Please read a great and short article that [explains hardening process](https://linux-audit.com/linux-server-hardening-most-important-steps-to-secure-systems/) step by step by [Michael Boelen](https://michaelboelen.com/).
 
 ### How to hardening Linux?
 
@@ -323,7 +324,7 @@ Please see **[SCAP Security Policies](https://www.open-scap.org/security-policie
 
 ### SCAP Security Guide
 
-The auditing system settings with SCAP Security Guide project contains guidance for settings of Red Hat Enterprise Linux 7/CentOS Linux and it's validated by NIST.
+The auditing system settings with SCAP Security Guide project contains guidance for settings of Red Hat/CentOS and it's validated by NIST.
 
 You should inspect the security content of your system with `oscap info` module:
 
@@ -380,3 +381,7 @@ If you find something which doesn't make sense, or one of these doesn't seem rig
 Before add pull request please see **[this](CONTRIBUTING.md)**.
 
 If this project is useful and important for you or if you really like _The Practical Linux Hardening Guide_, you can bring me **more positive energy**, give me some **good words** or **support this project** more. Thank you!
+
+## License
+
+GPLv3 : <http://www.gnu.org/licenses/>, for more please see [LICENSE](https://github.com/trimstray/the-practical-linux-hardening-guide/blob/master/LICENSE.md).

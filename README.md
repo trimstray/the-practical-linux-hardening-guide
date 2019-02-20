@@ -234,7 +234,7 @@ In my opinion you should definitely drop all non-industry policies, articles, ma
 
 We have a lot of great GNU/Linux hardening policies to provide safer operating systems compatible with security protocols. For me, **CIS** and the **PCI-DSS** compliant are about the best actual prescriptive guides.
 
-  > Most of all you should use [Security Benchmarks/Policies](#policy-compliance) which describe consensus best practices for the secure configuration of target systems because configuring your systems in compliance with e.g. CIS has been shown to eliminate 80-95% of known security vulnerabilities.
+  > Most of all you should use [Security Benchmarks/Policies](#policy-compliance) which describe consensus best practices for the secure configuration of target systems because configuring your systems in compliance eliminate the most common security fails/bugs. For example, CIS has been shown to eliminate 80-95% of known security vulnerabilities.
 
 On the other hand e.g. STIG itself is just a complicated (for newbies difficult to implement) check-list. In my opinion ideally, real world implementation is automated via something like OpenSCAP.
 

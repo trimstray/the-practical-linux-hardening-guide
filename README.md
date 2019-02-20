@@ -94,7 +94,7 @@
     + [Swap partition](lib/post_install_tasks/disk_partitions.md#eight_pointed_black_star-swap-partition)
     + [Disk quotas](lib/post_install_tasks/disk_partitions.md#eight_pointed_black_star-disk-quotas)
     + [Summary checklist](lib/post_install_tasks/disk_partitions.md#ballot_box_with_check-summary-checklist)
-  * **[Keep system updated](lib/post_install_tasks/keep-system-updated.md#keep-system-updated)**
+  * **[Keep system updated](lib/post_install_tasks/keep_system_updated.md#keep-system-updated)**
     + [Introduction](lib/post_install_tasks/keep_system_updated.md#information_source-introduction)
     + [Make sure that the system is up to date](lib/post_install_tasks/keep_system_updated.md#eight_pointed_black_star-make-sure-that-the-system-is-up-to-date)
     + [Automatic security updates](lib/post_install_tasks/keep_system_updated.md#eight_pointed_black_star-automatic-security-updates)

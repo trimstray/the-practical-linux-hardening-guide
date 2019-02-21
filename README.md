@@ -182,7 +182,7 @@ In accordance with PCI-DSS requirements established a formal policy and supporti
 
 Security Content Automation Protocol (SCAP) provides a mechanism to check configurations, vulnerability management and evaluate policy compliance for a variety of systems.
 
-One of the most popular implementations of SCAP is OpenSCAP and it is very helpful for vulnerability assessment and also as hardening helper.
+One of the most popular implementations of SCAP is OpenSCAP and it is very helpful for vulnerability assessment and also as hardening helper. OpenSCAP can easily handle the SCAP standards and generate neat, HTML-based reports.
 
 Please see **[SCAP Security Policies](https://www.open-scap.org/security-policies/)**, **[OpenSCAP User Manual](https://static.open-scap.org/openscap-1.2/oscap_user_manual.html)** and **[OpenSCAP Static](https://static.open-scap.org/)**.
 
@@ -198,7 +198,7 @@ oscap info /usr/share/xml/scap/ssg/rhel7/ssg-rhel7-ds.xml
 
 ### OpenSCAP Base
 
-The `oscap` tool scans your system, validate security compliance content and generate reports and guides based on these scans.
+The OpenSCAP scanner will only provide meaningful results if the content you want it to process is correct and up to date. The `oscap` tool scans your system, validate security compliance content and generate reports and guides based on these scans.
 
 Official [OpenSCAP Base](https://www.open-scap.org/tools/openscap-base/) documentation say:
 

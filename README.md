@@ -70,9 +70,7 @@
 
 **The Practical Linux Hardening Guide** provides a high-level overview of the hardening GNU/Linux systems. It is not an official standard or handbook but it _touches_ and _use_ industry standards.
 
-This guide also provides you with _practical step-by-step instructions_ for building your own hardened systems and services.
-
-One of the main goals of this guide is to create a single document covering internal and external threats.
+This guide also provides you with _practical step-by-step instructions_ for building your own hardened systems and services. One of the main goals of this guide is to create a single document covering _internal_ and _external_ threats.
 
 A few simple rules for this project:
 

@@ -50,7 +50,7 @@
   * [How to hardening Linux?](#how-to-hardening-linux)
   * [Which distribution should be used?](#which-distribution-should-be-used)
   * [How to read this guide?](#how-to-read-this-guide)
-  * [Okay. Let's start, 3, 2, 1... STOP!](#okay-let-s-start-3-2-1-stop)
+  * [Okay. Let's start, 3, 2, 1... STOP!](#okay-lets-start-3-2-1-stop)
 - **[Policy Compliance](#policy-compliance)**
   * [Center of Internet Security (CIS)](#center-of-internet-security-cis)
   * [Security Technical Implementation Guide (STIG)](#security-technical-implementation-guide-stig)

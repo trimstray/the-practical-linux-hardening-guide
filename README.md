@@ -74,10 +74,11 @@ This guide also provides you with _practical step-by-step instructions_ for buil
 
 A few simple rules for this project:
 
-- this guide is compliant with [OpenSCAP](https://www.open-scap.org/) (PCI-DSS)
-- is based on a minimal [RHEL7](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) and [CentOS 7](https://www.centos.org/) installations
-- it does not exhaust everything about Linux hardening
-- it also contains non-related rules with PCI-DSS
+- compliant with [OpenSCAP](https://www.open-scap.org/) (PCI-DSS/C2S/CIS)
+- based on a minimal [RHEL7](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) and [CentOS 7](https://www.centos.org/) installations
+- does not exhaust everything about Linux hardening
+- include a lot of security tips from the PCI-DSS/C2S/CIS
+- contains also non-related rules with PCI-DSS/C2S/CIS
 - some hardening rules/descriptions can be done better
 - you can think of it also as a checklist
 
@@ -99,7 +100,7 @@ You need to harden your system to protect your assets as much as possible. Why i
 
 In my opinion you should definitely drop all non-industry policies, articles, manuals and other (especially on your production environments but also if you harden standalone home server). These lists exist to give false sense of security and they are not bases on authority standards.
 
-We have a lot of great GNU/Linux hardening policies to provide safer operating systems compatible with security protocols. For me, **CIS** and the **PCI-DSS** compliant are about the best actual prescriptive guides - but of course you can choose a different one.
+We have a lot of great GNU/Linux hardening policies to provide safer operating systems compatible with security protocols. For me, **CIS** and the **PCI-DSS** compliant are about the best actual prescriptive guides - but of course you can choose a different one (e.g. **STIGs**, **DISA**).
 
   > Most of all you should use [Security Benchmarks/Policies](#policy-compliance) which describe consensus best practices for the secure configuration of target systems.
 

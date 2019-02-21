@@ -122,6 +122,8 @@ This guide is being written and tested on **Red Hat Enterprise Linux 7** and **C
 
 Both distributions allow the use of **[certified tools](#scap-security-guide)** which can parse and evaluate each component of the SCAP standard.
 
+If you use another distribution there is no problem, this guide is also for you.
+
 ### How to read this guide?
 
 The three levels of understanding:

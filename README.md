@@ -72,6 +72,8 @@
 
 This guide also provides you with _practical step-by-step instructions_ for building your own hardened systems and services.
 
+One of the main goals of this guide is to create a single document covering internal and external threats.
+
 A few simple rules for this project:
 
 - compliant with [OpenSCAP](https://www.open-scap.org/) (PCI-DSS/C2S/CIS)

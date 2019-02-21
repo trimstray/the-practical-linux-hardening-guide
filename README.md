@@ -86,7 +86,7 @@ Before you start remember:
 
   > This guide also contains my comments that may be differ from certain industry principles. If you are not sure what to do please see **[Policy Compliance](#policy-compliance)** chapter.
 
-:heavy_check_mark: &nbsp;All the rules from this guide for implementing security changes on your environment are on the **[Wiki](https://github.com/trimstray/the-practical-linux-hardening-guide/wiki)**.
+:heavy_check_mark: &nbsp;If you want to start, read **[Wiki](https://github.com/trimstray/the-practical-linux-hardening-guide/wiki)**.
 
 ### The importance of Linux hardening
 

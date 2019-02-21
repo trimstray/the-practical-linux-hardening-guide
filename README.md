@@ -68,7 +68,7 @@
 
 ### General disclaimer
 
-**[The Practical Linux Hardening Guide](https://github.com/trimstray/the-practical-linux-hardening-guide/wiki)** provides a high-level overview of the hardening GNU/Linux systems. It is not an official standard or handbook but it _touches_ and _use_ industry standards.
+**The Practical Linux Hardening Guide** provides a high-level overview of the hardening GNU/Linux systems. It is not an official standard or handbook but it _touches_ and _use_ industry standards.
 
 This guide also provides you with _practical step-by-step instructions_ for building your own hardened systems and services. One of the main goals of this guide is to create a single document covering _internal_ and _external_ threats.
 
@@ -258,6 +258,8 @@ For more please see [LICENSE](https://github.com/trimstray/the-practical-linux-h
 ---
 
 <p align="center">
-    <img src="https://github.com/trimstray/the-practical-linux-hardening-guide/blob/master/doc/img/start_preview.png"
+    <a href="https://github.com/trimstray/the-practical-linux-hardening-guide/wiki">
+      <img src="https://github.com/trimstray/the-practical-linux-hardening-guide/blob/master/doc/img/start_preview.png"
         alt="Master">
+    </a>
 </p>

@@ -82,11 +82,7 @@ A few simple rules for this project:
 - some hardening rules/descriptions can be done better
 - you can think of it also as a checklist
 
-Before you start remember:
-
   > This guide also contains my comments that may be differ from certain industry principles. If you are not sure what to do please see **[Policy Compliance](#policy-compliance)** chapter.
-
-:heavy_check_mark: &nbsp;If you want to start, read **[Wiki](https://github.com/trimstray/the-practical-linux-hardening-guide/wiki)**.
 
 ### The importance of Linux hardening
 
@@ -95,6 +91,8 @@ Simply speaking, hardening is the process of making a system more secure. Out of
 The process of hardening servers involves both IT ops. and security teams and require changes to the default configuration according to industry benchmarks.
 
 You need to harden your system to protect your assets as much as possible. Why it's important? Please read a great and short article that [explains hardening process](https://linux-audit.com/linux-server-hardening-most-important-steps-to-secure-systems/) step by step by [Michael Boelen](https://michaelboelen.com/).
+
+The first time is always the hardest, and I hope this guide will get you started down the righteous path.
 
 ### How to hardening Linux?
 
@@ -258,3 +256,7 @@ If this project is useful and important for you or if you really like _The Pract
 ## License
 
 For more please see [LICENSE](https://github.com/trimstray/the-practical-linux-hardening-guide/blob/master/LICENSE.md).
+
+---
+
+:heavy_check_mark: &nbsp;If you want to start, go **[here](https://github.com/trimstray/the-practical-linux-hardening-guide/wiki)**.

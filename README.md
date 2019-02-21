@@ -196,7 +196,11 @@ The auditing system settings with SCAP Security Guide project contains guidance 
 You should inspect the security content of your system with `oscap info` module:
 
 ```bash
-oscap info /usr/share/xml/scap/ssg/rhel7/ssg-rhel7-ds.xml
+# For RHEL:
+oscap info /usr/share/xml/scap/ssg/content//ssg-rhel7-ds.xml
+
+# For CentOS:
+oscap info /usr/share/xml/scap/ssg/content/ssg-centos7-ds.xml
 ```
 
 ### OpenSCAP Base

@@ -68,7 +68,7 @@
 
 ### General disclaimer
 
-**The Practical Linux Hardening Guide** provides a high-level overview of the hardening GNU/Linux systems. It is not an official standard or handbook but it _touches_ and _use_ industry standards.
+**[The Practical Linux Hardening Guide](https://github.com/trimstray/the-practical-linux-hardening-guide/wiki)** provides a high-level overview of the hardening GNU/Linux systems. It is not an official standard or handbook but it _touches_ and _use_ industry standards.
 
 This guide also provides you with _practical step-by-step instructions_ for building your own hardened systems and services. One of the main goals of this guide is to create a single document covering _internal_ and _external_ threats.
 
@@ -91,8 +91,6 @@ Simply speaking, hardening is the process of making a system more secure. Out of
 The process of hardening servers involves both IT ops. and security teams and require changes to the default configuration according to industry benchmarks.
 
 You need to harden your system to protect your assets as much as possible. Why it's important? Please read a great and short article that [explains hardening process](https://linux-audit.com/linux-server-hardening-most-important-steps-to-secure-systems/) step by step by [Michael Boelen](https://michaelboelen.com/).
-
-The first time is always the hardest, and I hope this guide will get you started down the righteous path.
 
 ### How to hardening Linux?
 
@@ -259,4 +257,7 @@ For more please see [LICENSE](https://github.com/trimstray/the-practical-linux-h
 
 ---
 
-:heavy_check_mark: &nbsp;If you want to start, go **[here](https://github.com/trimstray/the-practical-linux-hardening-guide/wiki)**.
+<p align="center">
+    <img src="https://github.com/trimstray/the-practical-linux-hardening-guide/blob/master/doc/img/start_preview.png"
+        alt="Master">
+</p>

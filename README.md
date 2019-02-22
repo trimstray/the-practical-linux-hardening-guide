@@ -257,9 +257,4 @@ For more please see [LICENSE](https://github.com/trimstray/the-practical-linux-h
 
 ---
 
-<p align="center">
-    <a href="https://github.com/trimstray/the-practical-linux-hardening-guide/wiki">
-      <img src="https://github.com/trimstray/the-practical-linux-hardening-guide/blob/master/doc/img/start_preview.png"
-        alt="Master">
-    </a>
-</p>
+<h4><p align="center">:beginner: To start please go to the <a href="https://github.com/trimstray/the-practical-linux-hardening-guide/wiki">Wiki</a>.</p></h4>

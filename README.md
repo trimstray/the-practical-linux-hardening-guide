@@ -74,11 +74,11 @@ This guide also provides you with _practical step-by-step instructions_ for buil
 
 A few simple rules for this project:
 
-- compliant with [OpenSCAP](https://www.open-scap.org/) (PCI-DSS/C2S/CIS)
+- useful, simple and not tiring
+- include a lot of security tips from the C2S/CIS
+- contains also non-related rules with C2S/CIS
 - based on a minimal [RHEL7](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) and [CentOS 7](https://www.centos.org/) installations
 - does not exhaust everything about Linux hardening
-- include a lot of security tips from the PCI-DSS/C2S/CIS
-- contains also non-related rules with PCI-DSS/C2S/CIS
 - some hardening rules/descriptions can be done better
 - you can think of it also as a checklist
 
@@ -102,7 +102,7 @@ We have a lot of great GNU/Linux hardening policies to provide safer operating s
 
 Configuring your systems in compliance eliminate the most common security fails/bugs. For example, CIS has been shown to eliminate 80-95% of known security vulnerabilities.
 
-On the other hand e.g. STIG itself is just a complicated (for newbies difficult to implement) check-list. In my opinion ideally, real world implementation is automated via something like OpenSCAP.
+On the other hand these standards are complicated (for newbies difficult to implement) check-list. In my opinion ideally, real world implementation is automated via something like OpenSCAP.
 
   > You should use a rational approach because more is not better. Each environment is different so security rules should all work in theory, but sometimes it not works as well.
 

@@ -82,6 +82,8 @@ A few simple rules for this project:
 - some hardening rules/descriptions can be done better
 - you can think of it also as a checklist
 
+Please also remember:
+
   > This guide also contains my comments that may be differ from certain industry principles. If you are not sure what to do please see **[Policy Compliance](#policy-compliance)** chapter.
 
 ### The importance of Linux hardening
@@ -102,7 +104,7 @@ We have a lot of great GNU/Linux hardening policies to provide safer operating s
 
 Configuring your systems in compliance eliminate the most common security fails/bugs. For example, CIS has been shown to eliminate 80-95% of known security vulnerabilities.
 
-On the other hand these standards are complicated (for newbies difficult to implement) check-list. In my opinion ideally, real world implementation is automated via something like OpenSCAP.
+On the other hand these standards are complicated (for newbies difficult to implement) check-lists. In my opinion ideally, real world implementation is automated via something like OpenSCAP.
 
   > You should use a rational approach because more is not better. Each environment is different so security rules should all work in theory, but sometimes it not works as well.
 

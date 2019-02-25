@@ -70,9 +70,9 @@
 
 **The Practical Linux Hardening Guide** provides a high-level overview of the hardening GNU/Linux systems. It is not an official standard or handbook but it _touches_ and _use_ industry standards.
 
-This guide also provides you with _practical step-by-step instructions_ for building your own hardened systems and services. One of the main goals of this guide is to create a single document covering _internal_ and _external_ threats.
+This guide also provides you with _practical step-by-step instructions_ for building your own hardened systems and services. One of the main goals is to create a single document covering _internal_ and _external_ threats.
 
-A few simple rules for this project:
+A few rules for this project:
 
 - useful, simple and not tiring
 - include a lot of security tips from the C2S/CIS
@@ -124,11 +124,35 @@ If you use another distribution there is no problem, this guide is also for you.
 
 ### How to read this guide?
 
-The three levels of understanding:
+Primarily please look at the structure of the chapters. Each of them looks as follows:
 
-- read the _main chapters_ (introduction and other sub chapters), e.g. _Linux kernel hardening_, it offers a general overview
+```
+ Chapter - e.g. Core Layer
+    |
+    |-- Subsection - e.g. Maintaining Software
+    |       \
+    |        |-- Rationale
+    |        |-- Solution
+    |        |-- Policies
+    |        |-- Comments
+    |        |-- Useful resources
+    |
+    |-- Subsection - e.g. Accounts and Access
+    |       \
+    |        |-- Rationale
+    |        |-- Solution
+    |        |-- Policies
+    |        |-- Comments
+    |        |-- Useful resources
+```
+
+Levels of understanding:
+
+- read the _chapter_ and _subsection_, it offers a general overview
+- read the _rationale_, it tell you why you should make changes
+- read the _solution_ and _policies_, it's always compliant with the standard and on this basis, make changes
+- read the _comments_ to find out what you can change/add to the _solution_
 - check the _useful resources_ for a deeper understanding
-- check the _policies_ and on this basis, make changes
 
 ### Okay. Let's start, 3, 2, 1... STOP!
 
@@ -197,7 +221,7 @@ You should inspect the security content of your system with `oscap info` module:
 
 ```bash
 # For RHEL:
-oscap info /usr/share/xml/scap/ssg/content//ssg-rhel7-ds.xml
+oscap info /usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml
 
 # For CentOS:
 oscap info /usr/share/xml/scap/ssg/content/ssg-centos7-ds.xml

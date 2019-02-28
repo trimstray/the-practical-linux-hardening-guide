@@ -142,16 +142,14 @@ Primarily please look at the structure of the chapters. Each of them looks as fo
     |-- Subsection - e.g. Maintaining Software
     |       \
     |        |-- Rationale
-    |        |-- Solution
-    |        |-- Policies
+    |        |-- Solution (+ policies)
     |        |-- Comments
     |        |-- Useful resources
     |
     |-- Subsection - e.g. Accounts and Access
     |       \
     |        |-- Rationale
-    |        |-- Solution
-    |        |-- Policies
+    |        |-- Solution (+ policies)
     |        |-- Comments
     |        |-- Useful resources
 ```

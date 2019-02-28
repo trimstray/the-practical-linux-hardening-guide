@@ -92,6 +92,8 @@ Simply speaking, hardening is the process of making a system more secure. Out of
 
 The process of hardening servers involves both IT ops. and security teams and require changes to the default configuration according to industry benchmarks.
 
+Also for me hardening is the fine art of doing the right things, even if they in itself don't always look to be having a big impact. It's always a balance between ease of use and protection.
+
 You need to harden your system to protect your assets as much as possible. Why it's important? Please read a great and short article that [explains hardening process](https://linux-audit.com/linux-server-hardening-most-important-steps-to-secure-systems/) step by step by [Michael Boelen](https://michaelboelen.com/).
 
 ### How to hardening Linux?
@@ -107,6 +109,14 @@ Configuring your systems in compliance eliminate the most common security fails/
 On the other hand these standards are complicated (for newbies difficult to implement) check-lists. In my opinion ideally, real world implementation is automated via something like OpenSCAP.
 
   > You should use a rational approach because more is not better. Each environment is different so security rules should all work in theory, but sometimes it not works as well.
+
+Hardening is not a simple process. Each of us must devote a lot of time to it. Here are the general rules that just follow the common best practices:
+
+- never use root account for anything that does not require it
+- only sudo individual commands or for a short time
+- never let a server running as root (except for its initialization time...) and ensure that it leaves all unnecessary privileges before accepting requests
+- secure your firewall the best you can and forbid all unnecessary accesses
+- do not install unnecessary or non controlled software
 
 ### Which distribution should be used?
 

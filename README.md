@@ -113,7 +113,7 @@ On the other hand, these standards are complicated checklists (often for newbies
 Hardening is not a simple process. You must devote a lot of time. Here are general rules following common best practices:
 
 - Never use root account for anything that does not require it
-- Only ```sudo``` individual commands
+- Only `sudo` individual commands
 - Never set a server to run as root (except for initialization time) and ensure that it exits all unnecessary privileges before accepting requests
 - Ssecure your firewall the best you can and forbid all unnecessary access
 - Do not install unnecessary or unstable software

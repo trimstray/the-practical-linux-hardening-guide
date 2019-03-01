@@ -130,7 +130,7 @@ This guide is tested on **Red Hat Enterprise Linux 7** and **CentOS 7** distribu
 
 Both distributions allow the use of **[certified tools](#scap-security-guide)** which can parse and evaluate each component of the SCAP standard.
 
-If you use another distribution--no problem, this guide is also for you.
+If you use another distribution - no problem, this guide is also for you.
 
 ### How to Read This Guide
 

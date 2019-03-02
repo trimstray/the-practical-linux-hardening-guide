@@ -100,7 +100,7 @@ You need to harden your system to protect your assets as much as possible. Why i
 
 In my opinion, you should drop all non-industry policies, articles, manuals, and others especially on production environments and standalone home servers. These lists exist to give a false sense of security and aren't based on authority standards.
 
-There are a lot of great GNU/Linux hardening policies available to provide safer operating systems compatible with security protocols. For me, CIS and the STIGs compliances are about the best prescriptive guides--but of course you can choose a different one (e.g. PCI-DSS, DISA).
+There are a lot of great GNU/Linux hardening policies available to provide safer operating systems compatible with security protocols. For me, CIS and the STIGs compliances are about the best prescriptive guides - but of course you can choose a different one (e.g. PCI-DSS, DISA).
 
   > Most of all you should use [Security Benchmarks/Policies](#policy-compliance) which describe consensus best practices for the secure configuration of target systems.
 

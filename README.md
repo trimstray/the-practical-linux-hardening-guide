@@ -48,7 +48,7 @@
   - [General Disclaimer](#general-disclaimer)
   - [The Importance of Linux Hardening](#the-importance-of-linux-hardening)
   - [How to Harden Linux](#how-to-harden-linux)
-  - [Which Distribution Should be Used?](#which-distribution-should-be-used)
+  - [Which Distribution Should be Used](#which-distribution-should-be-used)
   - [How to Read This Guide](#how-to-read-this-guide)
   - [Okay. Let's start, 3, 2, 1... STOP!](#okay-lets-start-3-2-1-stop)
 - **[Policy Compliance](#policy-compliance)**
@@ -118,7 +118,7 @@ Hardening is not a simple process. You must devote a lot of time. Here are gener
 - secure your firewall the best you can and forbid all unnecessary access
 - do not install unnecessary or unstable software
 
-### Which Distribution Should be Used?
+### Which Distribution Should be Used
 
 This guide is tested on **Red Hat Enterprise Linux 7** and **CentOS 7** distributions because these are:
 

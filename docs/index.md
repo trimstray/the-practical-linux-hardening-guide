@@ -4,7 +4,7 @@ layout: default
 
 ## About Project
 
-**[The Practical Linux Hardening Guide](https://github.com/trimstray/the-practical-linux-hardening-guide/wiki)** provides a high-level overview of hardening GNU/Linux systems. It is not an official standard or handbook but it _touches_ and _uses_ industry standards.
+**[The Practical Linux Hardening Guide](https://github.com/trimstray/the-practical-linux-hardening-guide/)** provides a high-level overview of hardening GNU/Linux systems. It is not an official standard or handbook but it _touches_ and _uses_ industry standards.
 
 This guide also provides you with _practical step-by-step instructions_ for building your own hardened systems and services. One of the main goals is to create a single document covering _internal_ and _external_ threats.
 

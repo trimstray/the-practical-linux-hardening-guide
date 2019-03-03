@@ -118,7 +118,7 @@ On the other hand, these standards are complicated checklists (often for newbies
 
   > You should use a rational approach because more is not better. Each environment is different, so even though security rules should all work in theory, sometimes things will not work as expected.
 
-Hardening is not a simple process. You must devote a lot of time. Here are general rules following common best practices:
+Hardening is not a simple process. Here are general rules following common best practices:
 
 - never use root account for anything that does not require it
 - only `sudo` individual commands

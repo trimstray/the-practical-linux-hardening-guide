@@ -3,7 +3,7 @@
 <br>
 
 <p align="center">
-    <img src="https://github.com/trimstray/the-practical-linux-hardening-guide/blob/master/doc/img/main_preview.jpg"
+    <img src="https://github.com/trimstray/the-practical-linux-hardening-guide/blob/master/static/img/main_preview.jpg"
         alt="Master">
 </p>
 
@@ -37,8 +37,6 @@
 </div>
 
 <br>
-
-<p align="center"><code>I'm back, work in progress...</code>
 
 ****
 
@@ -85,6 +83,16 @@ A few rules for this project:
 Please also remember:
 
   > This guide also contains my comments that may differ from certain industry principles. If you are not sure what to do please see **[Policy Compliance](#policy-compliance)**.
+
+This guide use following [OpenSCAP](https://www.open-scap.org/) configurations:
+
+- [U.S. Government Commercial Cloud Services (C2S) baseline inspired by CIS v2.1.1](https://static.open-scap.org/ssg-guides/ssg-rhel7-guide-C2S.html)
+
+  > C2S for Red Hat Enterprise Linux 7 v0.1.43.
+
+- [Red Hat Enterprise Linux 7 Security Technical Implementation Guide (STIG)](https://www.stigviewer.com/stig/red_hat_enterprise_linux_7/)
+
+  > The requirements are derived from the (NIST) 800-53 and related documents.
 
 ### The Importance of Hardening Linux
 

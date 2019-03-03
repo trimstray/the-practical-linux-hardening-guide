@@ -18,8 +18,6 @@ This guide use following [OpenSCAP](https://www.open-scap.org/) configurations:
 
   > The requirements are derived from the (NIST) 800-53 and related documents
 
-It's also available [multi-page](https://github.com/trimstray/the-practical-linux-hardening-guide/wiki) version.
-
 ## About Me
 
 I'm a System and (tiny) Network Administrator. Also Security Enthusiast.

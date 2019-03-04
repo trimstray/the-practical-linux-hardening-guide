@@ -16,7 +16,7 @@ This guide use following [OpenSCAP](https://www.open-scap.org/) configurations:
 
 - [Red Hat Enterprise Linux 7 Security Technical Implementation Guide (STIG)](https://www.stigviewer.com/stig/red_hat_enterprise_linux_7/)
 
-  > The requirements are derived from the (NIST) 800-53 and related documents
+  > The requirements are derived from the (NIST) 800-53 and related documents.
 
 ## About Me
 

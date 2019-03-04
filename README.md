@@ -80,7 +80,7 @@ A few rules for this project:
 - some hardening rules/descriptions can be done better
 - you can think of it as a checklist
 
-This guide use following [OpenSCAP](https://www.open-scap.org/) configurations:
+The Practical Linux Hardening Guide use following [OpenSCAP](https://www.open-scap.org/) configurations:
 
 - [U.S. Government Commercial Cloud Services (C2S) baseline inspired by CIS v2.1.1](https://static.open-scap.org/ssg-guides/ssg-rhel7-guide-C2S.html)
 
@@ -92,7 +92,7 @@ This guide use following [OpenSCAP](https://www.open-scap.org/) configurations:
 
 Please also remember:
 
-  > _The Practical Linux Hardening Guide_ also contains my comments that may differ from certain industry principles. If you are not sure what to do please see **[Policy Compliance](#policy-compliance)**.
+  > This guide contains my comments that may differ from certain industry principles. If you are not sure what to do please see **[Policy Compliance](#policy-compliance)**.
 
 ### The Importance of Hardening Linux
 

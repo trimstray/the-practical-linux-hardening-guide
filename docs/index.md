@@ -8,7 +8,7 @@ layout: default
 
 This guide also provides you with _practical step-by-step instructions_ for building your own hardened systems and services. One of the main goals is to create a single document covering _internal_ and _external_ threats.
 
-This guide use following [OpenSCAP](https://www.open-scap.org/) configurations:
+The Practical Linux Hardening Guide use following [OpenSCAP](https://www.open-scap.org/) configurations:
 
 - [U.S. Government Commercial Cloud Services (C2S) baseline inspired by CIS v2.1.1](https://static.open-scap.org/ssg-guides/ssg-rhel7-guide-C2S.html)
 

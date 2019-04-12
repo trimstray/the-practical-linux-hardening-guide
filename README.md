@@ -3,7 +3,9 @@
 <br>
 
 <p align="center">
-  <img src="https://github.com/trimstray/the-practical-linux-hardening-guide/blob/master/static/img/main_preview.jpg" alt="Master">
+  <a href="https://github.com/trimstray/the-practical-linux-hardening-guide">
+    <img src="https://github.com/trimstray/the-practical-linux-hardening-guide/blob/master/static/img/main_preview.jpg" alt="Master">
+  </a>
 </p>
 
 <br>

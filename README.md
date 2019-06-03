@@ -37,7 +37,7 @@
 
 - **[Introduction](#introduction)**
   - [General Disclaimer](#general-disclaimer)
-  - [The Importance of Linux Hardening](#the-importance-of-linux-hardening)
+  - [The Importance of Hardening Linux](#the-importance-of-hardening-linux)
   - [How to Harden Linux](#how-to-harden-linux)
   - [Which Distribution Should be Used](#which-distribution-should-be-used)
   - [How to Read This Guide](#how-to-read-this-guide)

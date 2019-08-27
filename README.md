@@ -36,7 +36,7 @@
 # Table of Contents
 
 - **[Introduction](#introduction)**
-  - [General Disclaimer](#general-disclaimer)
+  - [Prologue](#prologue)
   - [The Importance of Hardening Linux](#the-importance-of-hardening-linux)
   - [How to Harden Linux](#how-to-harden-linux)
   - [Which Distribution Should be Used](#which-distribution-should-be-used)
@@ -57,7 +57,7 @@
 
 ## Introduction
 
-### General Disclaimer
+### Prologue
 
 **[The Practical Linux Hardening Guide](https://trimstray.github.io/the-practical-linux-hardening-guide/)** provides a high-level overview of hardening GNU/Linux systems. It is not an official standard or handbook but it _touches_ and _uses_ industry standards.
 

@@ -288,7 +288,7 @@ Thanks [@artem-sidorenko](https://github.com/artem-sidorenko)!
 
 If you find something which doesn't make sense, or something doesn't seem right, please make a pull request and please add valid and well-reasoned explanations about your changes or comments.
 
-Before adding a pull request, please see the **[contributing guidelines](CONTRIBUTING.md)**.
+Before adding a pull request, please see the **[contributing guidelines](.github/CONTRIBUTING.md)**.
 
 If this project is useful and important for you or if you really like _The Practical Linux Hardening Guide_, you can bring **positive energy** by giving some **good words** or **supporting this project**. Thank you!
 

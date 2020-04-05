@@ -175,6 +175,22 @@ Levels of understanding:
 - _Comments_ helps you figure out what you can change or add to the _solution_
 - _Useful resources_ provide deeper understanding
 
+If you do not have the time to read hundreds of articles (just like me) this multipurpose handbook may be useful. This handbook does not get into all aspects of GNU/Linux hardening. I tried to put external resources in many places in this handbook in order to dispel any suspicion that may exist.
+
+I did my best to make this guid a single and consistent (but now I know that is really hard). It's organized in an order that makes logical sense to me.
+
+Do not treat this hardening guide as revealed knowledge. You should take a scientific approach when reading this document. If you have any doubts and disagree with me, please point out my mistakes. You should to discover cause and effect relationships by asking questions, carefully gathering and examining the evidence, and seeing if all the available information can be combined in to a logical answer.
+
+I create this handbook for one more reason. Rather than starting from scratch in, I putting together a plan for answering your questions to help you find the best way to do things and ensure that you don't repeat my mistakes from the past.
+
+So, what's most important:
+
+- ask a questions about something that you observe
+- do background research
+- do tests with an experiments
+- analyze and draw conclusions
+- communicate results (for us!)
+
 ### Okay. Let's start, 3, 2, 1... STOP!
 
 Making major changes to your systems can be risky.
